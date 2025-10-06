@@ -128,6 +128,15 @@
       "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
+      "banner": {
+      "not_found": "Product not found",
+      "available_prefix": "In Stock: ",
+      "not_available": "Not Available",
+      "add_to_cart": "Add To Cart",
+      // ✅ Нові ключі для JS
+      "select_size": "Please select a size", 
+      "unavailable": "This combination is unavailable"
+    },
       "media": {
         "gallery_viewer": "Gallery Viewer",
         "load_image": "Load image {{ index }} in gallery view",
