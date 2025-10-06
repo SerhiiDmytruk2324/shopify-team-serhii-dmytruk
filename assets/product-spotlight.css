@@ -244,6 +244,9 @@
     margin-top: 12px;
     color: var(--light-gray);
   }
+  .old-price.line-through {
+    text-decoration: line-through;
+  }
 
   .product-info .color-options {
     display: flex;
