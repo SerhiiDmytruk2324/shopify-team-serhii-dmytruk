@@ -3,11 +3,10 @@
   <p>{{- 'products.product.banner.not_found' | t | default: 'Product not found' -}}</p>
   {% break %}
 {% endif %}
-
-{{- 'product-spotlight.js' | asset_url | script_tag -}}
-{{- 'swiper-bundle.min.js' | asset_url | script_tag }}
-{{- 'swiper-bundle.min.css' | asset_url | stylesheet_tag -}}
-{{- 'product-spotlight.css' | asset_url | stylesheet_tag -}}
+<script src="{{ 'product-spotlight.js' | asset_url }}" defer></script>
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+{{ 'product-spotlight.css' | asset_url | stylesheet_tag }}
 
 <section class="spotlight container padding-lr">
   <div class="spotlight__main mt-60">
@@ -104,7 +103,7 @@
 
       {% assign initial_variant = product.selected_or_first_available_variant %}
       <a
-        href="/cart?variant=- initial_variant.id | default: 0 -}}&quantity=1"
+        href="{{ routes.cart_url }}?variant={{ initial_variant.id | default: 0 }}&quantity=1"
         id="add-to-cart-link"
         class="btn border-radius btn-black add-to-cart center"
         role="button">
@@ -121,6 +120,6 @@
 
 <script>
       window.ProductSpotlightSettings = {
-    productUrl: '{{- product.url | escape }}'
+    productUrl: '{{- product.url | escape -}}'
   };
 </script>
