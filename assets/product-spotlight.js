@@ -364,7 +364,17 @@
   // ========================================
   
   function getColorVariants(color) {
-    return state.variantsData.filter(v => v.color === color && v.imageUrl);
+    const colorVariants = state.variantsData.filter(v => 
+    v.color === color && v.imageUrl && v.imageUrl.trim() !== ''
+  );
+  
+  // Remove duplicate images
+  const seen = new Set();
+  return colorVariants.filter(v => {
+    if (seen.has(v.imageUrl)) return false;
+    seen.add(v.imageUrl);
+    return true;
+  });
   }
 
   function getColorVariantsAll(color) {
