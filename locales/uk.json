@@ -2109,7 +2109,143 @@
           "total": "Всього",
           "actions_accessibility_label": "Дії",
           "products_accessibility_label": "Продукти"
-        }
+        },
+        "delivered": "Доставлено {{date}}",
+        "empty_state_order_source_description": "Тут відображатимуться лише замовлення, розміщені користувачем {{email}} .",
+        "empty_state_subtitle": "Зайдіть до магазину, щоб зробити замовлення.",
+        "empty_state_title": "Поки що немає замовлень",
+        "empty_state_with_location_title": "Немає замовлень для {{locationName}}",
+        "empty_state_title_for_pending_orders": "Немає відкладених замовлень",
+        "no_order_banner": "Щоб протестувати розширення на сторінці «Стан замовлення», створіть замовлення.",
+        "estimated_shortform": "Орієнтовно {{date}}",
+        "estimated_delivery": "Очікується {{date}}",
+        "one_images_accessibility_label": "Замовлення включає {{lineItemName1}}",
+        "two_images_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}}",
+        "three_images_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}}",
+        "four_images_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} , {{lineItemName4}}",
+        "more_than_three_products_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}} та ще {{numberOfAdditionalProducts}} товарів",
+        "more_than_four_products_accessibility_label": "Замовлення включає {{lineItemName1}} , {{lineItemName2}} , {{lineItemName3}} та ще {{numberOfAdditionalProducts}} товарів",
+        "plus_more": "+ {{numberOfAdditionalProducts}}",
+        "plus_more_products": "+ {{numberOfAdditionalProducts}} товарів",
+        "carousel": {
+          "one_products_accessibility_label": "Замовлення містить {{lineItemName1}} кількість {{lineItemQuantity1}}",
+          "two_products_accessibility_label": "Замовлення містить {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity2}}",
+          "three_products_accessibility_label": "Замовлення містить {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity2}} , {{lineItemName3}} кількість {{lineItemQuantity3}}",
+          "four_products_accessibility_label": "Замовлення містить {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity2}} , {{lineItemName3}} кількість {{lineItemQuantity3}} , {{lineItemName4}} кількість {{lineItemQuantity4}}",
+          "five_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity2}} , {{lineItemName3}} кількість {{lineItemQuantity3}} , {{lineItemName4}} кількість {{lineItemQuantity4}} , {{lineItemName5}} кількість {{lineItemQuantity5}}",
+          "six_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity2}} , {{lineItemName3}} кількість {{lineItemQuantity3}} , {{lineItemName4}} кількість {{lineItemQuantity4}} , {{lineItemName5}} кількість {{lineItemQuantity5}} , {{lineItemName6}} кількість {{lineItemQuantity6}}",
+          "six_and_more_products_accessibility_label": "Замовлення включає {{lineItemName1}} кількість {{lineItemQuantity1}} , {{lineItemName2}} кількість {{lineItemQuantity2}} , {{lineItemName3}} кількість {{lineItemQuantity3}} , {{lineItemName4}} кількість {{lineItemQuantity4}} , {{lineItemName5}} кількість {{lineItemQuantity5}} , {{lineItemName6}} кількість {{lineItemQuantity6}} та інше",
+          "view_order_details": "Переглянути деталі замовлення",
+          "previous": "Попередній",
+          "next": "Далі"
+        },
+        "items": {
+          "one": "{{count}} товар",
+          "other": "{{count}} товарів"
+        },
+        "no_filtered_results_description": "Видаліть або налаштуйте фільтри, щоб переглянути свої замовлення",
+        "no_filtered_results_title": "Немає відфільтрованих результатів",
+        "order_link": "Переглянути замовлення {{name}}",
+        "order_number": "Замовлення {{name}}",
+        "orders_title": "Підтверджено",
+        "pagination": {
+          "nav_accessibility_label": "Кнопки навігації по замовленнях",
+          "next": "Далі",
+          "next_accessibility_label": "Наступні замовлення",
+          "previous": "Попередній",
+          "previous_accessibility_label": "Попередні замовлення",
+          "load_more": "Завантажити більше",
+          "load_more_accessibility_label": "Завантажити більше замовлень"
+        },
+        "order_status_message": {
+          "list_view": {
+            "view_order_for_details": "Перегляньте замовлення для отримання детальної інформації",
+            "estimated_delivery": "Очікується {{date}}",
+            "last_updated": "Останнє оновлення: {{date}}"
+          },
+          "table_view": {
+            "estimated_delivery": "Орієнтовна дата доставки {{date}}"
+          }
+        },
+        "payment_status": {
+          "gallery_view": {
+            "overdue": "Прострочений платіж",
+            "due": "Термін оплати {{date}}",
+            "due_today": "Оплата має бути здійснена сьогодні",
+            "due_without_date": "Платіж заборгований",
+            "due_on_fulfillment": "Оплата після виконання",
+            "pay_to_confirm": "Оплатіть для підтвердження",
+            "payment_not_due": "Платіж ще не надійшов"
+          },
+          "list_view": {
+            "overdue": "Прострочено",
+            "due": "Термін виконання: {{date}}",
+            "due_today": "Термін сплати сьогодні",
+            "paid": "Платно",
+            "due_without_date": "Термін",
+            "due_on_fulfillment": "Підлягає виконанню",
+            "pay_to_confirm": "Оплатіть для підтвердження",
+            "payment_not_due": "Ще не термін сплати"
+          }
+        },
+        "sort_by": "Сортувати за: {{option}}",
+        "sort_hide_options_accessibility_label": "Приховати параметри сортування для підтверджених замовлень.",
+        "sort_show_options_accessibility_label": "Показати параметри сортування для підтверджених замовлень.",
+        "sort_currently_sorted_by_accessibility_label": "Наразі відсортовано за: {{option}}",
+        "sort_title": "Сортувати",
+        "sort": {
+          "date": {
+            "newest": "Від найновіших до найстаріших",
+            "oldest": "Від найстаріших до найновіших"
+          },
+          "location": {
+            "ascending": "Місцезнаходження (Аризона)",
+            "descending": "Місцезнаходження (ZA)"
+          },
+          "order_number": {
+            "ascending": "Номер замовлення (від меншого до більшого)",
+            "descending": "Номер замовлення (від більшого до меншого)"
+          },
+          "order_total": {
+            "ascending": "Загальна сума замовлення (від меншої до більшої)",
+            "descending": "Загальна сума замовлення (від більшої до меншої)"
+          }
+        },
+        "location_filter_picker": {
+          "all_location": "Усі місця розташування",
+          "current_location": "Поточне місцезнаходження",
+          "switch_view": "Перемикання режиму перегляду"
+        },
+        "filter_title": "Фільтр",
+        "filter": {
+          "clear_section": "Очистити розділ",
+          "clear_all": "Очистити все",
+          "apply": "Застосувати",
+          "date": {
+            "start_date": "Дата початку",
+            "end_date": "Дата завершення",
+            "title": "Дата замовлення",
+            "today": "Сьогодні",
+            "last_7_days": "Останні 7 днів",
+            "last_30_days": "Останні 30 днів",
+            "last_90_days": "Останні 90 днів",
+            "last_365_days": "Останні 12 місяців",
+            "custom": "Користувацька"
+          }
+        },
+        "show_order_actions_accessibility_label": "Показати дії замовлення {{name}}"
+      },
+      "order_status": {
+        "attempted_delivery_label": "Спроба доставки",
+        "attempted_to_deliver_label": "Намагався доставити",
+        "preparing_for_shipping_label": "Підготовка до відправлення",
+        "ready_for_pickup_label": "Готовий до самовивозу",
+        "ready_for_pickup_description": "Ці товари готові до отримання. Будь ласка, візьміть із собою підтвердження замовлення, коли забиратимете його.",
+        "ready_for_pickup_location": "Ваше замовлення готове до отримання на місці",
+        "picked_up_label": "Забрано",
+        "canceled_label": "Скасовано",
+        "canceled_title": "Ваше замовлення скасовано",
+        "come_back": "Повертайтеся на цю сторінку, щоб отримувати оновлення щодо статусу вашого відправлення."
       }
     },
     "address_form": {
@@ -2636,5 +2772,159 @@
     "update_country": "Оновити країну/регіон",
     "popular_countries_regions": "Популярні країни/регіони",
     "country_results_count": "Знайдено {{ count }} країн/регіонів"
+  },
+  "sections": {
+    "cart": {
+      "taxes_included_shipping_at_checkout_with_policy_html": "Податки включено. Знижки та <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">вартість доставки</a> розраховуються під час оформлення замовлення.",
+      "taxes_included_shipping_at_checkout_without_policy": "Податки включено. Знижки та вартість доставки розраховуються під час оформлення замовлення.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Мито включено. Податки, знижки та <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">вартість доставки</a> розраховуються під час оформлення замовлення.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Мито включено. Податки, знижки та вартість доставки розраховуються під час оформлення замовлення.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Податки, знижки та <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">вартість доставки</a> розраховуються під час оформлення замовлення.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Податки, знижки та вартість доставки розраховуються під час оформлення замовлення.",
+      "headings": {
+        "product": "Продукт",
+        "total": "Всього",
+        "quantity": "Кількість",
+        "image": "Зображення продукту"
+      },
+      "update": "Оновлення",
+      "login": {
+        "title": "Маєте обліковий запис?",
+        "paragraph_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\" class=\"link underlined-link\">Увійдіть</a> , щоб швидше оформити замовлення."
+      }
+    },
+    "footer": {
+      "payment": "Способи оплати"
+    },
+    "featured_blog": {
+      "view_all": "Переглянути всі",
+      "onboarding_title": "Допис у блозі",
+      "onboarding_content": "Надайте своїм клієнтам короткий виклад вашої публікації в блозі"
+    },
+    "featured_collection": {
+      "view_all": "Переглянути всі",
+      "view_all_label": "Переглянути всі товари з колекції {{ collection_name }}"
+    },
+    "collection_list": {
+      "view_all": "Переглянути всі"
+    },
+    "collection_template": {
+      "empty": "Не знайдено жодних товарів",
+      "title": "Колекція",
+      "use_fewer_filters_html": "Використовуйте менше фільтрів або <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">видаліть усі</a>"
+    },
+    "video": {
+      "load_video": "Завантажити відео: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "Завантажити слайд",
+      "previous_slideshow": "Попередній слайд",
+      "next_slideshow": "Наступний слайд",
+      "pause_slideshow": "Призупинити слайд-шоу",
+      "play_slideshow": "Відтворити слайд-шоу",
+      "carousel": "Карусель",
+      "slide": "Слайд"
+    },
+    "page": {
+      "title": "Заголовок сторінки"
+    },
+    "quick_order_list": {
+      "product_total": "Проміжний підсумок продукту",
+      "view_cart": "Переглянути кошик",
+      "each": "{{ money }} /шт.",
+      "product": "Продукт",
+      "variant": "Варіант",
+      "variant_total": "Загальна сума варіантів",
+      "items_added": {
+        "one": "Додано товар {{ quantity }}",
+        "other": "Додано товарів {{ quantity }}"
+      },
+      "items_removed": {
+        "one": "Видалено товару {{ quantity }}",
+        "other": "Видалено {{ quantity }} товарів"
+      },
+      "product_variants": "Варіанти продукту",
+      "total_items": "Всього товарів",
+      "remove_all_single_item_confirmation": "Видалити 1 товар з кошика?",
+      "remove_all_items_confirmation": "Видалити всі товари {{ quantity }} з кошика?",
+      "remove_all": "Видалити все",
+      "cancel": "Скасувати",
+      "min_error": "Цей товар має мінімум {{ min }}",
+      "max_error": "Цей товар має максимальну кількість {{ max }}",
+      "step_error": "Ви можете додавати цей елемент лише з кроком {{ step }}"
+    }
+  },
+  "general": {
+    "password_page": {
+      "login_form_heading": "Увійдіть до магазину, використовуючи пароль:",
+      "login_password_button": "Вхід за допомогою пароля",
+      "login_form_password_label": "Пароль",
+      "login_form_password_placeholder": "Ваш пароль",
+      "login_form_error": "Неправильний пароль!",
+      "login_form_submit": "Введіть",
+      "admin_link_html": "Ви власник магазину? <a href=\"/admin\" class=\"link underlined-link\">Увійдіть тут</a>",
+      "powered_by_shopify_html": "Цей магазин працюватиме на базі {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Поділитися на Facebook",
+        "share_on_twitter": "Поділитися на X",
+        "share_on_pinterest": "Закріпити на Pinterest"
+      },
+      "links": {
+        "twitter": "Х (Твіттер)",
+        "facebook": "Фейсбук",
+        "pinterest": "Пинтерест",
+        "instagram": "Інстаграм",
+        "snapchat": "Снепчат",
+        "vimeo": "Вімео",
+        "tiktok": "ТікТок"
+      }
+    },
+    "continue_shopping": "Продовжити покупки",
+    "pagination": {
+      "label": "Пагінація",
+      "page": "Сторінка {{ number }}",
+      "next": "Наступна сторінка",
+      "previous": "Попередня сторінка"
+    },
+    "search": {
+      "reset": "Очистити пошуковий термін"
+    },
+    "cart": {
+      "view": "Переглянути кошик ( {{ count }} )",
+      "view_empty_cart": "Переглянути кошик",
+      "item_added": "Товар додано до вашого кошика"
+    },
+    "share": {
+      "close": "Закрити спільний доступ",
+      "copy_to_clipboard": "Копіювати посилання",
+      "share_url": "Посилання",
+      "success_message": "Посилання скопійовано в буфер обміну"
+    },
+    "slider": {
+      "of": "з",
+      "next_slide": "Проведіть пальцем праворуч",
+      "previous_slide": "Просуньте ліворуч",
+      "name": "Слайдер"
+    }
+  },
+  "newsletter": {
+    "label": "Електронна пошта",
+    "success": "Дякуємо за підписку",
+    "button_label": "Підписатися"
+  },
+  "accessibility": {
+    "skip_to_text": "Перейти до змісту",
+    "skip_to_product_info": "Перейти до інформації про продукт",
+    "close": "Закрити",
+    "unit_price_separator": "за",
+    "vendor": "Постачальник:",
+    "error": "Помилка",
+    "refresh_page": "Вибір варіанта призводить до повного оновлення сторінки.",
+    "link_messages": {
+      "new_window": "Відкривається в новому вікні.",
+      "external": "Відкриває зовнішній вебсайт."
+    }
   }
 }
