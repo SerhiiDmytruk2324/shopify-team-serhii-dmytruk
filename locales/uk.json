@@ -2049,7 +2049,22 @@
       "tracking_company": "Перевізник",
       "tracking_number": "Номер відстеження",
       "subtotal": "Проміжний підсумок",
-      "total_duties": "Обов'язки"
+      "total_duties": "Обов'язки",
+      "title": "Замовлення {{ name }}",
+      "date_html": "Розміщено {{ date }}",
+      "cancelled_html": "Замовлення скасовано {{ date }}",
+      "cancelled_reason": "Причина: {{ reason }}",
+      "billing_address": "Платіжна адреса",
+      "payment_status": "Статус платежу",
+      "shipping_address": "Адреса доставки",
+      "fulfillment_status": "Статус виконання",
+      "discount": "Знижка",
+      "shipping": "Доставка",
+      "tax": "Податок",
+      "product": "Продукт",
+      "sku": "Артикул",
+      "quantity": "Кількість",
+      "total": "Всього"
     },
     "orders": {
       "title": "Історія замовлень",
@@ -2080,6 +2095,59 @@
       "password": "Пароль",
       "password_confirm": "Підтвердьте пароль",
       "submit": "Скинути пароль"
+    },
+    "account": {
+      "title": "Обліковий запис",
+      "details": "Дані облікового запису",
+      "view_addresses": "Переглянути адреси",
+      "return": "Повернутися до інформації про обліковий запис"
+    },
+    "account_fallback": "Обліковий запис",
+    "activate_account": {
+      "title": "Активувати обліковий запис",
+      "subtext": "Створіть пароль для активації облікового запису.",
+      "password": "Пароль",
+      "password_confirm": "Підтвердьте пароль",
+      "submit": "Активувати обліковий запис",
+      "cancel": "Відхилити запрошення"
+    },
+    "addresses": {
+      "title": "Адреси",
+      "default": "За замовчуванням",
+      "add_new": "Додати нову адресу",
+      "edit_address": "Редагувати адресу",
+      "first_name": "Ім'я",
+      "last_name": "Прізвище",
+      "company": "Компанія",
+      "address1": "Адреса 1",
+      "address2": "Адреса 2",
+      "city": "Місто",
+      "country": "Країна/регіон",
+      "province": "Провінція",
+      "zip": "Поштовий індекс",
+      "phone": "Телефон",
+      "set_default": "Встановити як адресу за замовчуванням",
+      "add": "Додати адресу",
+      "update": "Оновити адресу",
+      "cancel": "Скасувати",
+      "edit": "Редагувати",
+      "delete": "Видалити",
+      "delete_confirm": "Ви впевнені, що хочете видалити цю адресу?"
+    },
+    "log_in": "Увійти",
+    "log_out": "Вийти",
+    "login_page": {
+      "cancel": "Скасувати",
+      "create_account": "Створити обліковий запис",
+      "email": "Електронна пошта",
+      "forgot_password": "Забули пароль?",
+      "guest_continue": "Продовжити",
+      "guest_title": "Продовжити як гість",
+      "password": "Пароль",
+      "title": "Вхід",
+      "sign_in": "Увійти",
+      "submit": "Надіслати",
+      "alternate_provider_separator": "або"
     }
   },
   "gift_cards": {
@@ -2113,5 +2181,75 @@
       "send_on": "РРРР-ММ-ДД",
       "send_on_label": "Надіслати (необов'язково)"
     }
+  },
+  "products": {
+    "facets": {
+      "product_count_simple": {
+        "one": "{{ count }} товар",
+        "other": "{{ count }} товарів"
+      },
+      "reset": "Скинути",
+      "sort_button": "Сортувати",
+      "sort_by_label": "Сортувати за:",
+      "to": "До",
+      "clear_filter": "Видалити фільтр"
+    }
+  },
+  "templates": {
+    "search": {
+      "no_results": "Не знайдено результатів для запиту « {{ terms }} ». Перевірте орфографію або використайте інше слово чи фразу.",
+      "page": "Сторінка",
+      "products": "Продукти",
+      "results_pages_with_count": {
+        "one": "сторінка {{ count }}",
+        "other": "сторінок {{ count }}"
+      },
+      "results_suggestions_with_count": {
+        "one": "{{ count }} пропозиція",
+        "other": "{{ count }} пропозицій"
+      },
+      "results_products_with_count": {
+        "one": "{{ count }} товар",
+        "other": "{{ count }} товарів"
+      },
+      "results_with_count": {
+        "one": "результат {{ count }}",
+        "other": "{{ count }} результатів"
+      },
+      "results_with_count_and_term": {
+        "one": "Знайдено {{ count }} результатів для запиту « {{ terms }} »",
+        "other": "Знайдено {{ count }} результатів для запиту « {{ terms }} »"
+      },
+      "title": "Результати пошуку",
+      "search_for": "Пошук за запитом « {{ terms }} »",
+      "suggestions": "Пропозиції",
+      "pages": "Сторінки"
+    },
+    "cart": {
+      "cart": "Кошик"
+    },
+    "contact": {
+      "form": {
+        "title": "Контактна форма",
+        "name": "Ім'я",
+        "email": "Електронна пошта",
+        "phone": "Номер телефону",
+        "comment": "Коментар",
+        "send": "Надіслати",
+        "post_success": "Дякуємо, що звернулися до нас. Ми зв'яжемося з вами якомога швидше.",
+        "error_heading": "Будь ласка, відрегулюйте наступне:"
+      }
+    },
+    "404": {
+      "title": "Сторінку не знайдено"
+    }
+  },
+  "localization": {
+    "country_label": "Країна/регіон",
+    "language_label": "Мова",
+    "update_language": "Оновити мову",
+    "update_country": "Оновити країну/регіон",
+    "popular_countries_regions": "Популярні країни/регіони",
+    "country_results_count": "Знайдено {{ count }} країн/регіонів"
   }
 }
