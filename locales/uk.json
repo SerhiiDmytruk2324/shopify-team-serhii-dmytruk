@@ -2245,8 +2245,148 @@
         "picked_up_label": "Забрано",
         "canceled_label": "Скасовано",
         "canceled_title": "Ваше замовлення скасовано",
-        "come_back": "Повертайтеся на цю сторінку, щоб отримувати оновлення щодо статусу вашого відправлення."
-      }
+        "come_back": "Повертайтеся на цю сторінку, щоб отримувати оновлення щодо статусу вашого відправлення.",
+        "company_tracking_number": "Номер відстеження {{company}} :",
+        "confirmed_label": "Підтверджено",
+        "confirmed_title": "Ваше замовлення підтверджено",
+        "confirmed_description_pickup": "Ви отримаєте електронний лист, коли ваше замовлення буде готове до отримання.",
+        "confirmed_description_digital": "Ви отримаєте електронного листа, коли ваше замовлення буде готове.",
+        "confirmed_description_gift_card_text": "Ви отримаєте SMS-повідомлення, коли ваше замовлення буде готове.",
+        "complete_label": "Завершено",
+        "delivered_label": "Доставлено",
+        "delivered_description_gift_card": {
+          "one": "Подарункову карту було надіслано електронною поштою.",
+          "other": "Подарункові картки були надіслані електронною поштою."
+        },
+        "delivered_description_gift_card_text": {
+          "one": "Подарункову картку було надіслано текстовим повідомленням.",
+          "other": "Подарункові картки були надіслані текстовими повідомленнями."
+        },
+        "gift_card_label": {
+          "one": "Подарункова карта",
+          "other": "Подарункові картки"
+        },
+        "gift_card_resend_button": {
+          "one": "Повторно надіслати подарункову карту",
+          "other": "Повторно надіслати подарункові картки"
+        },
+        "gift_resend_success": {
+          "one": "Подарункову картку повторно",
+          "other": "Подарункові картки передруковано"
+        },
+        "gift_resend_failure": {
+          "one": "Виникла проблема з повторним надсиланням вашої подарункової картки. Спробуйте ще раз або зв’яжіться з нами.",
+          "other": "Виникла проблема з повторним надсиланням ваших подарункових карток. Спробуйте ще раз або зв’яжіться з нами."
+        },
+        "confirmed_gift_card_additional_description": {
+          "one": "Подарункову карту буде надіслано окремим електронним листом.",
+          "other": "Кожна подарункова карта буде надіслана окремим електронним листом."
+        },
+        "confirmed_gift_card_additional_description_text": {
+          "one": "Подарункова карта буде надіслана окремим SMS-повідомленням.",
+          "other": "Кожна подарункова картка буде надіслана окремим текстовим повідомленням."
+        },
+        "status_timestamp": "Оновлено {{date}}",
+        "estimated_delivery": "Очікується {{date}}",
+        "expected_by": "Очікується до {{date}}",
+        "was_expected_by": "Очікувалося до {{date}}",
+        "delivered": "Прибув {{date}}",
+        "buy_with_prime_logo_accessibility_label": "Купити на Amazon з логотипом Prime",
+        "in_review_label": "У процесі огляду",
+        "in_review_title": "Ваше замовлення розглядається",
+        "last_updated": "Останнє оновлення: {{date}}",
+        "multiple_shipments_label": "Кілька відправлень",
+        "multiple_statuses_label": "Кілька статусів замовлення",
+        "no_tracking_number": "Для цієї відправки немає номера відстеження.",
+        "tracking_number": {
+          "one": "Номер відстеження",
+          "other": "Номери відстеження"
+        },
+        "on_its_way_label": "У дорозі",
+        "out_for_delivery_label": "Доставка відправлена",
+        "resume_tracking": "Відновлення відстеження",
+        "submitted_label": "Надіслано",
+        "submitted_description": "Перегляньте деталі замовлення та оплати.",
+        "there_was_a_problem_label": "Виникла проблема",
+        "track_shipment": "Відстеження відправлення",
+        "request_return": "Запит на повернення",
+        "view_order_for_details": "Перегляньте замовлення для отримання детальної інформації",
+        "external_promise_manage_button_label": {
+          "buy_with_prime": "Керування на Amazon"
+        },
+        "amazon_buy_with_prime": {
+          "order_tracking_link": {
+            "text": "Керування за допомогою Amazon",
+            "new_window_disclaimer": "(відкриється нове вікно)"
+          }
+        },
+        "delivery_promise_v2": {
+          "promise_line": {
+            "shop_promise_brand_label": "Гарантія доставки",
+            "external_promise_brand_label": "Доставка до",
+            "not_delivered_by_label": "Доставлено після {{date}}",
+            "delivery_guarantee_expired_label": "Гарантія доставки закінчилася",
+            "modal_accessibility_button_label": "Деталі обіцянки доставки",
+            "download_shop_app_button_label": "Завантажити магазин для відстеження",
+            "track_with_shop_button_label": "Відстежуйте з магазином",
+            "claim_shop_cash_button_label": "Претендувати на готівку в магазині"
+          },
+          "details_modal": {
+            "title": "Гарантія доставки",
+            "active_delivery_guarantee_label": "Доставка до {{date}}",
+            "expired_delivery_guarantee_description": "Термін дії 30-денної гарантії Shop Promise для цього замовлення закінчився.",
+            "expired_badge_label": "Термін дії минув",
+            "order_includes_guarantees_label": "Ваше замовлення включає {{deliveryAgreementsCount}} гарантій",
+            "order_includes_guarantees_description": "Shop Promise гарантує швидку та надійну доставку. Отримайте готівку від Shop Cash, якщо ваше замовлення надійде після {{date}} .",
+            "delivered_after_label": "Доставлено після {{date}}",
+            "delivered_after_description": "Оскільки ваше замовлення надійшло із запізненням, ви маєте право отримати готівку в розмірі {{amount}} .",
+            "claimed_shop_cash_description": "Оскільки це замовлення надійшло із запізненням, ви отримали готівку в розмірі {{amount}} .",
+            "eligible_to_claim_shop_cash_description": "Оскільки ваше замовлення надійшло із запізненням, ви маєте право отримати готівку в розмірі {{amount}} .",
+            "learn_more_button_label": "Дізнатися більше",
+            "claim_shop_cash_button_label": "Претендувати на готівку в магазині",
+            "view_balance_in_shop_button_label": "Переглянути баланс у магазині",
+            "scan_to_claim_shop_cash_label": "Відскануйте, щоб отримати готівку в магазині {{amount}}"
+          }
+        },
+        "delivery_promise": {
+          "promise_line": {
+            "single_brand_label": "Доставка за підтримки",
+            "mixed_brands_label": "Гарантована доставка",
+            "not_delivered_by_label": "Не доставлено до {{date}}",
+            "modal_accessibility_button_label": "Деталі обіцянки доставки"
+          },
+          "claim_shop_cash_cta": {
+            "has_shop_app_label": "Отримайте готівку з магазину",
+            "no_shop_app_label": "{{appDownloadLink}} , щоб отримати готівку в магазині",
+            "download_shop_app_label": "Завантажити магазин"
+          },
+          "details_modal": {
+            "title": "Доставка за підтримки",
+            "modal_accessiblity_label": "Деталі обіцянки доставки",
+            "delivery_guarantee_label": "Гарантія доставки",
+            "delivery_by_label": "Доставка до {{date}}",
+            "delivery_guaranteed_by_label": "Гарантована доставка до {{date}}",
+            "shop_cash_claim": {
+              "may_be_eligible_label": "Shop Promise гарантує швидку та надійну доставку. Отримайте готівку від Shop Cash, якщо ваше замовлення прибуде із запізненням.",
+              "may_be_eligible_not_authorized_label": "Ви можете мати право на отримання готівки з магазину, оскільки це замовлення надійшло із запізненням. Увійдіть, щоб переглянути деталі.",
+              "redeemed_label": "Ви вже отримали готівку з магазину, оскільки це замовлення надійшло із запізненням.",
+              "expired_label": "Це замовлення не підлягає претензії щодо затримки доставки, оскільки 30-денна гарантія закінчилася.",
+              "no_shop_cash_label": "Це замовлення не підлягає претензії щодо затримки доставки, оскільки воно не було оплачене через Shop Pay.",
+              "no_longer_guaranteed_label": "Гарантія доставки на ці товари більше не поширюється.",
+              "claim_shop_cash_title": "Відскануйте, щоб отримати {{amount}} у магазині Cash",
+              "claim_shop_cash_description": "Ви можете використовувати свої гроші з Shop Cash для майбутніх покупок у застосунку Shop."
+            }
+          }
+        }
+      },
+      "status_mark_as_delivered": "Позначити як доставлено",
+      "fulfillment_status_title": "Статус виконання: {{status}}",
+      "buy_again": "Купуйте знову",
+      "buy_again_accessibility_label": "Купити ще раз для замовлення {{orderId}}",
+      "manage": "Керувати",
+      "manage_accessiblity_label": "Керувати замовленням {{orderId}}",
+      "group_title_label": "Частина: {{groupTitle}}",
+      "group_title_label_with_parent": "Для: {{groupTitle}}"
     },
     "address_form": {
       "loading_form_accessibility_message": "Завантаження форми адреси",
@@ -2713,7 +2853,104 @@
       "sort_button": "Сортувати",
       "sort_by_label": "Сортувати за:",
       "to": "До",
-      "clear_filter": "Видалити фільтр"
+      "clear_filter": "Видалити фільтр",
+      "filter_and_operator_subtitle": "Зіставте все",
+      "apply": "Застосувати",
+      "clear": "Очистити",
+      "clear_all": "Видалити все",
+      "from": "Від",
+      "filter_and_sort": "Фільтрувати та сортувати",
+      "filter_by_label": "Фільтр:",
+      "filter_button": "Фільтр",
+      "filters_selected": {
+        "one": "Вибрано {{ count }}",
+        "other": "Вибрано {{ count }}"
+      },
+      "filter_selected_accessibility": "{{ type }} (вибрано {{ count }} фільтрів)",
+      "show_more": "Показати більше",
+      "show_less": "Показати менше",
+      "max_price": "Найвища ціна — {{ price }}",
+      "product_count": {
+        "one": "{{ product_count }} з {{ count }} товарів",
+        "other": "{{ product_count }} з {{ count }} товарів"
+      }
+    },
+    "product": {
+      "add_to_cart": "Додати до кошика",
+      "choose_options": "Виберіть параметри",
+      "choose_product_options": "Виберіть опції для {{ product_name }}",
+      "description": "Опис",
+      "inventory_in_stock": "В наявності",
+      "inventory_in_stock_show_count": "{{ quantity }} в наявності",
+      "inventory_low_stock": "Низький запас",
+      "inventory_low_stock_show_count": "Мало товару на складі: залишилося {{ quantity }}",
+      "inventory_out_of_stock": "Немає в наявності",
+      "inventory_out_of_stock_continue_selling": "В наявності",
+      "sku": "Артикул",
+      "on_sale": "Розпродаж",
+      "product_variants": "Варіанти продукту",
+      "media": {
+        "gallery_viewer": "Переглядач галереї",
+        "load_image": "Завантажити зображення {{ index }} у режимі перегляду галереї",
+        "load_model": "Завантажити 3D-модель {{ index }} у режимі перегляду галереї",
+        "load_video": "Відтворити відео {{ index }} у режимі галереї",
+        "image_available": "Зображення {{ index }} тепер доступне в режимі галереї",
+        "open_media": "Відкрити медіафайл {{ index }} у модальному вікні",
+        "play_model": "Відтворити 3D-переглядач",
+        "play_video": "Відтворити відео"
+      },
+      "quantity": {
+        "label": "Кількість",
+        "input_label": "Кількість для {{ product }}",
+        "increase": "Збільшити кількість для {{ product }}",
+        "decrease": "Зменшити кількість для {{ product }}",
+        "minimum_of": "Мінімум {{ quantity }}",
+        "maximum_of": "Максимум {{ quantity }}",
+        "multiples_of": "Прирости {{ quantity }}",
+        "min_of": "Мін. {{ quantity }}",
+        "max_of": "Макс. {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> у кошику",
+        "in_cart_aria_label": "Кількість ( {{ quantity }} у кошику)",
+        "note": "Переглянути правила кількості"
+      },
+      "volume_pricing": {
+        "title": "Ціноутворення на обсяг",
+        "note": "Доступні оптові ціни",
+        "minimum": "{{ quantity }} +",
+        "price_at_each_html": "за ціною {{ price }} /шт."
+      },
+      "pickup_availability": {
+        "view_store_info": "Переглянути інформацію про магазин",
+        "check_other_stores": "Перевірте наявність в інших магазинах",
+        "pick_up_available": "Доступний самовивіз",
+        "pick_up_available_at_html": "Самовивіз можливий за <span class=\"color-foreground\">{{ location_name }}</span>",
+        "pick_up_unavailable_at_html": "Самовивіз наразі недоступний за <span class=\"color-foreground\">{{ location_name }}</span>",
+        "unavailable": "Не вдалося завантажити інформацію про наявність місць для самовивозу",
+        "refresh": "Оновити"
+      },
+      "price": {
+        "from_price_html": "Від {{ price }}",
+        "regular_price": "Звичайна ціна",
+        "sale_price": "Ціна продажу",
+        "unit_price": "Ціна за одиницю"
+      },
+      "share": "Поділитися цим продуктом",
+      "sold_out": "Розпродано",
+      "unavailable": "Недоступно",
+      "vendor": "Постачальник",
+      "value_unavailable": "{{ option_value }} – Недоступно",
+      "variant_sold_out_or_unavailable": "Варіант розпроданий або недоступний",
+      "video_exit_message": "{{ title }} відкриває відео на весь екран у тому ж вікні.",
+      "view_full_details": "Переглянути повну інформацію",
+      "xr_button": "Перегляд у вашому просторі",
+      "xr_button_label": "Перегляд у вашому просторі, завантаження елемента у вікні доповненої реальності",
+      "taxes_included": "Податки включено.",
+      "duties_included": "Обов'язки включені.",
+      "duties_and_taxes_included": "Включаючи мита та податки.",
+      "shipping_policy_html": "<a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">Вартість доставки</a> розраховується при оформленні замовлення."
+    },
+    "modal": {
+      "label": "Медіагалерея"
     }
   },
   "templates": {
@@ -2925,6 +3162,35 @@
     "link_messages": {
       "new_window": "Відкривається в новому вікні.",
       "external": "Відкриває зовнішній вебсайт."
+    },
+    "loading": "Завантаження...",
+    "total_reviews": "загальна кількість відгуків",
+    "star_reviews_info": "{{ rating_value }} з {{ rating_max }} зірок",
+    "collapsible_content_title": "Згортається вміст",
+    "complementary_products": "Додаткові продукти"
+  },
+  "blogs": {
+    "article": {
+      "blog": "Блог",
+      "read_more_title": "Читати далі: {{ title }}",
+      "comments": {
+        "one": "{{ count }} коментар",
+        "other": "{{ count }} коментарів"
+      },
+      "moderated": "Зверніть увагу, що коментарі мають бути схвалені перед публікацією.",
+      "comment_form_title": "Залишити коментар",
+      "name": "Ім'я",
+      "email": "Електронна пошта",
+      "message": "Коментар",
+      "post": "Опублікувати коментар",
+      "back_to_blog": "Повернутися до блогу",
+      "share": "Поділитися цією статтею",
+      "success": "Ваш коментар успішно опубліковано! Дякуємо!",
+      "success_moderated": "Ваш коментар успішно опубліковано. Ми опублікуємо його незабаром, оскільки наш блог проходить модерацію."
     }
+  },
+  "onboarding": {
+    "product_title": "Приклад назви продукту",
+    "collection_title": "Назва вашої колекції"
   }
 }
