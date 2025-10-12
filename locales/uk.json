@@ -920,6 +920,11 @@
           }
         }
       }
+    },
+    "subscriptions": {
+      "buyer_consent_product": "Цей товар є періодичною або відкладеною покупкою. Продовжуючи, я погоджуюся з %{cancellationPolicyLink} та дозволяю вам стягувати кошти з мого способу оплати за цінами, з періодичністю та датами, зазначеними на цій сторінці, доки моє замовлення не буде виконано або я не скасую його, якщо це дозволено.",
+      "buyer_consent_cart": "Один або декілька товарів у вашому кошику є періодичною або відкладеною покупкою. Продовжуючи, я погоджуюся з %{cancellationPolicyLink} та дозволяю вам стягувати кошти з мого способу оплати за цінами, з періодичністю та в дати, зазначені на цій сторінці, доки моє замовлення не буде виконано або я не скасую його, якщо це дозволено.",
+      "cancellation_policy": "політика скасування"
     }
   },
   "customer_accounts": {
@@ -1060,6 +1065,137 @@
       },
       "show_items": "Показати елементи",
       "show_order_summary": "Показати зведення замовлення"
+    },
+    "date": {
+      "humanize": {
+        "lessThanOneHourAgo": {
+          "one": "{{count}} хвилину тому",
+          "other": "{{count}} хвилин тому"
+        },
+        "lessThanOneMinuteAgo": "Щойно",
+        "yesterday": "Вчора о {{time}}",
+        "today": "Сьогодні о {{time}}",
+        "tomorrow": "Завтра о {{time}}"
+      }
+    },
+    "enable_javascript": "Щоб переглянути свій обліковий запис, увімкніть JavaScript у налаштуваннях браузера або увійдіть за допомогою іншого браузера.",
+    "navigation_and_structure": {
+      "account_menu": {
+        "hide_accessibility_label": "Приховати меню облікового запису",
+        "label": "Обліковий запис",
+        "show_accessibility_label": "Показати меню облікового запису",
+        "nav_accessibility_label": "Навігація по обліковому запису",
+        "open_menu_accessibility_label": "Відкрити навігацію облікового запису",
+        "close_menu_accessibility_label": "Закрити навігацію облікового запису",
+        "loading_message": "Завантаження навігації облікового запису"
+      },
+      "action_menu_accessibility_label": "Більше дій",
+      "close_menu_accessibility_label": "Закрити основну навігацію",
+      "contact_email_subject": "Контакт з інтернет-магазину {{shopName}}",
+      "contact_link": "Контактна інформація",
+      "delete_confirmation": {
+        "cancel": "Скасувати",
+        "delete": "Видалити"
+      },
+      "dismiss_toast": "Відхилити",
+      "document_title": "{{sectionName}} – {{shopName}} – обліковий запис",
+      "go_to_store_link": "Перейти до магазину",
+      "loading_message": "Завантаження",
+      "loading_policy_content_accessibility_label": "Завантаження вмісту політики",
+      "log_out_link": "Вийти",
+      "logout_overlay_label": "Вихід...",
+      "nav_label_accessibility_label": "Основна навігація",
+      "navigation_accessibility_message": "Ви перейшли до {{sectionName}}",
+      "open_menu_accessibility_label": "Відкрити головну навігацію",
+      "shop_logo_accessibility_label": "Логотип {{shopName}}",
+      "subscriptions_link_label": "Підписки",
+      "settings_link": "Налаштування",
+      "country_switcher_toast_message": "Країна змінена на {{countryName}}",
+      "switch_country": "Змінити країну",
+      "no_countries_found": "Країн не знайдено",
+      "location_switcher_toast_message": "Місцезнаходження змінено на {{locationName}}",
+      "switch_location": "Змінити місцезнаходження",
+      "no_locations_found": "Місцезнаходження не знайдено",
+      "try_new_search": "Спробуйте новий пошук",
+      "view_details": "Переглянути деталі",
+      "company_location": "Розташування компанії",
+      "skip_to_content": "Перейти до змісту"
+    },
+    "announcement_bar": {
+      "expand_label": "Розгорнути панель оголошень",
+      "collapse_label": "Згорнути панель оголошень",
+      "close_label": "Закрити панель оголошень"
+    },
+    "account_information": {
+      "loading_accessibility_message": "Завантаження інформації про обліковий запис",
+      "loading_finished_accessibility_message": "Інформацію про обліковий запис завантажено",
+      "profile_card": {
+        "cancel": "Скасувати",
+        "cancel_accessibility_label": "Скасувати редагування профілю",
+        "edit": "Редагувати",
+        "edit_accessibility_label": "Редагувати профіль",
+        "email_help_text": "Електронну адресу не можна редагувати",
+        "editable_email_help_text": "Ця електронна адреса використовується для входу та оновлень замовлень.",
+        "first_name": "Ім'я",
+        "last_name": "Прізвище",
+        "email": "Електронна пошта",
+        "no_name_provided_accessibility_label": "Ім'я не додано",
+        "phone_number_help_text": "Номер телефону не можна редагувати",
+        "save": "Зберегти",
+        "save_accessibility_label": "Зберегти профіль",
+        "title": "Профіль",
+        "errors": {
+          "name_too_long": "Поле {{fieldName}} занадто довге (максимум 255 символів)",
+          "name_cannot_contain_url": "{{fieldName}} не може містити URL-адресу",
+          "name_cannot_contain_html_tags": "{{fieldName}} не може містити теги HTML",
+          "email_cant_be_blank": "Поле електронної пошти не може бути порожнім",
+          "invalid_email_format": "Введіть дійсну електронну адресу"
+        }
+      },
+      "verify_new_email_modal": {
+        "title": "Підтвердити електронну пошту",
+        "description": "Введіть код, надісланий на адресу {{email}}",
+        "one_time_password_label": "6-значний код",
+        "email_resend_button": "Надіслати код повторно",
+        "email_resend_button_accessibility_label": "Повторно надіслати код підтвердження",
+        "verify_button": "Перевірити",
+        "verify_button_accessibility_label": "Підтвердьте одноразовий пароль",
+        "cancel_button": "Скасувати",
+        "cancel_button_accessibility_label": "Скасувати редагування електронної пошти",
+        "email_resend_button_success_toast_message": "Код підтвердження надіслано",
+        "email_resend_button_error_banner_message": "Не вдалося надіслати код підтвердження"
+      },
+      "email_update_success_modal": {
+        "title": "Підтвердити електронну пошту",
+        "description": "Електронну адресу успішно оновлено. Перенаправлення для входу."
+      },
+      "profile_update_confirmation_message": "Профіль оновлено",
+      "email_update_confirmation_message": "Електронну адресу оновлено на {{email}}",
+      "title": "Профіль",
+      "people": {
+        "pagination": {
+          "load_more": "Завантажити більше",
+          "load_more_accessibility_label": "Завантажити більше людей",
+          "loading_accessibility_label": "Завантаження людей"
+        }
+      },
+      "add_button": "Додати"
+    },
+    "orders": {
+      "list_layout_accessibility_label": "Варіанти макета",
+      "list_title_with_pending_orders": "Замовлення:",
+      "list_title_confirmed_orders_accessibility_label": "Замовлення: підтверджено",
+      "list_title_pending_orders_accessibility_label": "Замовлення: очікують на розгляд",
+      "switch_order_type_pending_orders_accessibility_label": "Змінити тип ордера, наразі переглядаються очікувані ордери",
+      "switch_order_type_confirmed_orders_accessibility_label": "Змінити тип замовлення, наразі перегляд підтверджених замовлень",
+      "order_list": {
+        "column_headers": {
+          "order": "Замовлення",
+          "total": "Всього",
+          "actions_accessibility_label": "Дії",
+          "products_accessibility_label": "Продукти"
+        }
+      }
     }
   },
   "customer": {
