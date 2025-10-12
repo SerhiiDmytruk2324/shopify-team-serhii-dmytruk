@@ -552,5 +552,219 @@
         }
       }
     }
+  },
+  "customer_accounts": {
+    "order_details": {
+      "shipment_timeline": {
+        "expand_events_label": "Показати деталі",
+        "expand_events_accessibility_label": "Показати деталі доставки замовлення",
+        "hide_events_label": "Приховати деталі",
+        "hide_events_accessibility_label": "Приховати деталі доставки замовлення"
+      },
+      "addresses_section_title": "Виставлення рахунків та доставка",
+      "order_details": "Деталі замовлення",
+      "order_details_skeleton_accessibility_label": "Увійдіть, щоб переглянути всі деталі замовлення.",
+      "billing_address": "Платіжна адреса",
+      "card_ending_with": "закінчується на {{lastDigits}}",
+      "contact_information": "Контактна інформація",
+      "company": "Компанія",
+      "company_and_location": "Компанія та місцезнаходження",
+      "fully_refunded_label": "ПОВЕРТАННЯ",
+      "group_title_label": "Частина: {{groupTitle}}",
+      "group_title_label_with_parent": "Для: {{groupTitle}}",
+      "view_controls": {
+        "gallery": "Галерея",
+        "list": "Список"
+      },
+      "grouped_view_components": {
+        "expand_line_items": "Показати {{count}} елементів",
+        "collapse_line_items": "Приховати {{count}} елементів",
+        "line_item_summary_list_accessibility_label": "Елементи в комплекті {{productTitle}}"
+      },
+      "discount": "Знижка",
+      "hide_items": "Приховати елементи",
+      "loading": "Завантаження деталей замовлення",
+      "loading_finished_accessibility_message": "Деталі замовлення завантажено",
+      "location": "Розташування",
+      "image_gallery": {
+        "next": "Показати наступні елементи",
+        "previous": "Показати попередні елементи",
+        "load_more_items": {
+          "one": "Завантажити ще {{count}} елементів",
+          "other": "Завантажити ще {{count}} елементів"
+        }
+      },
+      "mobile_summary_toggle_button": {
+        "open": "Показати зведення замовлення",
+        "closed": "Приховати зведення замовлення"
+      },
+      "no_data": "Жоден",
+      "no_data_provided_accessibility_label": "Поле {{fieldName}} порожнє",
+      "not_applicable": "Немає даних",
+      "paid_amount": "Платно",
+      "partially_refunded_label": "ЧАСТКОВО ВІДШКОДУВАНО",
+      "payment": {
+        "status_in_review": "Оплата після перевірки",
+        "status_unpaid": "Оплата має бути здійснена {{date}}",
+        "title": "Оплата",
+        "payment_type": {
+          "gift_card": "Подарункова карта",
+          "store_credit": "Кредит магазину",
+          "money_order": "Грошовий переказ",
+          "cash_on_delivery": "Готівка при отриманні (POD)",
+          "bank_deposit": "Банківський депозит",
+          "manual": "Ручний"
+        },
+        "card_payment_details": "закінчується на {{lastDigits}} - {{formattedTransactionAmount}}",
+        "gift_card_payment_details": "закінчується на {{lastDigits}} - {{formattedTransactionAmount}}",
+        "store_credit_payment_details": "Кредит магазину – {{formattedTransactionAmount}}",
+        "shop_pay_installments": {
+          "paid_in_installments": "Оплачено частинами через Shop Pay",
+          "view_schedule": "Переглянути розклад"
+        },
+        "manual_payment_methods": {
+          "money_order": "Грошовий переказ - {{formattedTransactionAmount}}",
+          "cash_on_delivery": "Готівка при отриманні (COD) - {{formattedTransactionAmount}}",
+          "bank_deposit": "Банківський депозит – {{formattedTransactionAmount}}",
+          "manual": "Вручну – {{formattedTransactionAmount}}"
+        },
+        "transactions": {
+          "show_all": "Показати всі",
+          "show_less": "Показати менше",
+          "details": "Деталі",
+          "payment_details": "Платіжні реквізити"
+        },
+        "emv_details": {
+          "auth": "АВТОРИЗАЦІЯ:",
+          "aid": "Ідентифікатор допомоги:",
+          "source": "ДЖЕРЕЛО:"
+        }
+      },
+      "paid_with_shop_pay_installments_card": {
+        "paid_with_shop_pay_installments": "Оплачено частинами через Shop Pay",
+        "description": "Слідкуйте за своїм графіком платежів за допомогою нагадувань у додатку Shop.",
+        "payment_reminders_button": "Отримуйте нагадування про оплату",
+        "desktop_qr_code_content": {
+          "title": "Сканувати для пошуку нагадувань",
+          "description": "Отримуйте нагадування про платежі за допомогою Shop."
+        }
+      },
+      "refunded_amount": "Повернено кошти",
+      "request_return_failed": "Виникла проблема з обробкою вашого запиту. Будь ласка, спробуйте ще раз.",
+      "login_card": {
+        "resend_link_and_login": "Щоб переглянути деталі замовлення, увійдіть у систему або надішліть нове посилання на електронну пошту чи номер телефону, які використовувалися під час оформлення замовлення.",
+        "resend_link_only": "Щоб переглянути деталі замовлення, надішліть нове посилання на електронну пошту або номер телефону, вказані під час оформлення замовлення.",
+        "log_in": "Увійти",
+        "resend_link": "Надіслати нове посилання",
+        "link_expired": "Термін дії посилання закінчився."
+      },
+      "remaining_amount": "Залишок",
+      "marketing_section_title": "Новини та пропозиції",
+      "marketing_description": "Ви отримуватимете маркетингові електронні листи. Ви можете відмовитися від підписки будь-коли.",
+      "marketing_checkbox_label": "Надсилайте мені новини та пропозиції електронною поштою",
+      "marketing_checkmark_label": "Ви підписані на отримання новин та пропозицій електронною поштою",
+      "returns": {
+        "expand_events_label": "Показати деталі",
+        "hide_events_label": "Приховати деталі",
+        "ineligible_return_message": "Жоден товар у цьому замовленні не підлягає поверненню.",
+        "ineligible_return_message_when_returned": "Жодні додаткові товари в цьому замовленні не підлягають поверненню.",
+        "print_shipping_label": "Друк етикетки для доставки",
+        "return_and_refund_modal_header": "Політика повернення коштів",
+        "tracking_number": "Номер відстеження:",
+        "exchange_header": "Обмінні предмети",
+        "exchange_subheader": "Обмінні товари будуть додані до замовлення після завершення повернення."
+      },
+      "shipping": {
+        "address": "Адреса доставки",
+        "address_map_marker": "Адреса доставки",
+        "method": "Спосіб доставки",
+        "summary": "Доставка",
+        "free": "Безкоштовно",
+        "free_shipping_discount": "Безкоштовна доставка",
+        "one_time": "Одноразова доставка",
+        "subscription": "Доставка за передплатою"
+      },
+      "pickup": {
+        "pickup": "Самовивіз",
+        "pickup_location": "Місце отримання",
+        "pickup_point": "Пункт видачі"
+      },
+      "show_items": "Показати елементи",
+      "show_order_summary": "Показати зведення замовлення"
+    }
+  },
+  "customer": {
+    "order": {
+      "total_refunded": "Повернено кошти",
+      "fulfilled_at_html": "Виконано {{ date }}",
+      "track_shipment": "Відстеження відправлення",
+      "tracking_url": "Посилання для відстеження",
+      "tracking_company": "Перевізник",
+      "tracking_number": "Номер відстеження",
+      "subtotal": "Проміжний підсумок",
+      "total_duties": "Обов'язки"
+    },
+    "orders": {
+      "title": "Історія замовлень",
+      "order_number": "Замовлення",
+      "order_number_link": "Номер замовлення {{ number }}",
+      "date": "Дата",
+      "payment_status": "Статус платежу",
+      "fulfillment_status": "Статус виконання",
+      "total": "Всього",
+      "none": "Ви ще не розмістили жодних замовлень."
+    },
+    "recover_password": {
+      "title": "Скиньте пароль",
+      "subtext": "Ми надішлемо вам електронного листа для скидання пароля",
+      "success": "Ми надіслали вам електронного листа з посиланням для оновлення пароля."
+    },
+    "register": {
+      "title": "Створити обліковий запис",
+      "first_name": "Ім'я",
+      "last_name": "Прізвище",
+      "email": "Електронна пошта",
+      "password": "Пароль",
+      "submit": "Створити"
+    },
+    "reset_password": {
+      "title": "Скинути пароль облікового запису",
+      "subtext": "Введіть новий пароль",
+      "password": "Пароль",
+      "password_confirm": "Підтвердьте пароль",
+      "submit": "Скинути пароль"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "how_to_use_gift_card": "Використайте код подарункової картки онлайн або QR-код у магазині",
+      "title": "Ось баланс вашої подарункової картки {{ value }} для {{ shop }} !",
+      "subtext": "Ваша подарункова карта",
+      "gift_card_code": "Код подарункової картки",
+      "shop_link": "Відвідайте інтернет-магазин",
+      "add_to_apple_wallet": "Додати до Apple Wallet",
+      "qr_image_alt": "QR-код — відскануйте, щоб активувати подарункову карту",
+      "copy_code": "Скопіювати код подарункової картки",
+      "expiration_date": "Термін дії закінчується {{ expires_on }}",
+      "copy_code_success": "Код успішно скопійовано",
+      "expired": "Термін дії минув"
+    }
+  },
+  "recipient": {
+    "form": {
+      "checkbox": "Я хочу надіслати це як подарунок",
+      "expanded": "Форма одержувача подарункової картки розгорнута",
+      "collapsed": "Форма одержувача подарункової картки згорнута",
+      "email_label": "Електронна адреса одержувача",
+      "email_label_optional_for_no_js_behavior": "Електронна адреса одержувача (необов'язково)",
+      "email": "Електронна пошта",
+      "name_label": "Ім'я одержувача (необов'язково)",
+      "name": "Ім'я",
+      "message_label": "Повідомлення (необов'язково)",
+      "message": "Повідомлення",
+      "max_characters": "Максимум символів {{ max_chars }}",
+      "send_on": "РРРР-ММ-ДД",
+      "send_on_label": "Надіслати (необов'язково)"
+    }
   }
 }
