@@ -993,8 +993,128 @@
           "prepaid_order_one_cycle_delivery_not_included": {
             "one": "%{shipping_price} для доставки %{count}",
             "other": "%{shipping_price} для %{count} доставок (%{per_delivery_cost})"
+          },
+          "prepaid_order_no_cycle": {
+            "one": "%{shipping_price} для додаткової доставки %{count}, а потім %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} для ще %{count} доставок (%{per_delivery_cost}), а потім %{recurring_order_shipping_price}"
+          },
+          "prepaid_order_no_cycle_delivery_not_included": {
+            "one": "%{shipping_price} для доставки %{count}, а потім %{recurring_order_shipping_price}",
+            "other": "%{shipping_price} для %{count} доставок (%{per_delivery_cost}), а потім %{recurring_order_shipping_price}"
+          },
+          "subscription_free_with_frequency_label": "Безкоштовна доставка %{delivery_frequency}",
+          "prepaid_delivery_frequency": {
+            "one": "для доставки %{count}",
+            "other": "для %{count} доставок"
+          },
+          "subscription_delivery_frequency": {
+            "day": {
+              "one": "щодня",
+              "other": "кожні %{count} днів"
+            },
+            "week": {
+              "one": "щотижня",
+              "other": "кожні %{count} тижнів"
+            },
+            "month": {
+              "one": "щомісяця",
+              "other": "кожні %{count} місяців"
+            },
+            "year": {
+              "one": "щороку",
+              "other": "кожні %{count} років"
+            }
+          },
+          "multiple_subscriptions_shipping_price_label": "%{shipping_price} за доставку",
+          "prepaid_shipping_price_label": "%{shipping_price} за доставку x %{delivery_interval_count}",
+          "initial_order_discounted": "Спочатку вартість доставки %{discounted_shipping_cost}, потім %{frequency_description}",
+          "prepaid_initial_order_discounted": "Вартість першої доставки %{discounted_shipping_price} %{prepaid_delivery_frequency}",
+          "prepaid_initial_order_discounted_with_per_delivery_price": "Вартість першої доставки %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery})",
+          "prepaid_initial_order_discounted_with_renewal": "Спочатку вартість доставки %{discounted_shipping_price} %{prepaid_delivery_frequency}, потім %{shipping_price} %{billing_cycle}",
+          "prepaid_initial_order_discounted_with_per_delivery_price_and_renewal": "Спочатку вартість доставки %{discounted_shipping_price} %{prepaid_delivery_frequency} (%{discounted_cost_per_delivery}), потім %{shipping_price} %{billing_cycle}",
+          "shipping_price_included": "Включено",
+          "recurring_order_shipping_price": "а потім %{recurring_order_shipping_price}",
+          "first_order_shipping_price_included": "Перше замовлення включено, а потім %{recurring_order_shipping_price}",
+          "first_order_different_shipping_price": "%{first_order_shipping_price} (%{per_delivery_price} за доставку), а потім %{recurring_order_shipping_price}",
+          "first_n_order_free": {
+            "one": "Перше замовлення безкоштовне",
+            "other": "Перші %{count} замовлення безкоштовно"
+          },
+          "free_for_first_n_order": {
+            "one": "Для першого замовлення",
+            "other": "Для перших %{count} замовлень"
           }
-        }
+        },
+        "one_time_purchase_shipping": "Одноразова доставка",
+        "duties_and_taxes_title": "Мита та податки",
+        "shipping_information_required_notice": "Інформація про доставку обов'язкова. {{link}} .",
+        "shipping_information_redirect_link": "Введіть свою інформацію тут",
+        "loading_progressive_rates": "Пошук інших тарифів…",
+        "no_other_methods_available": "Інших методів немає",
+        "duties_and_taxes_options": {
+          "ddu_title": "Оплата при доставці",
+          "ddu_caption": "Можуть стягуватися додаткові збори",
+          "ddp_title": "Сплатити зараз",
+          "ddp_caption": "Без додаткових зборів за доставку"
+        },
+        "shipping_method_combinations": {
+          "without_separator": "%{першийМетод}, %{другийМетод}",
+          "combination": "%{rest} та %{current}"
+        },
+        "shipping_used_as_billing_notice": "Ця адреса також буде використана як ваша платіжна адреса для цього замовлення.",
+        "address_update": "Оновити адресу",
+        "shipping_address_title": "Надіслати до",
+        "shipping_address_rollup_accessibility_label": "Варіанти доставки на адресу",
+        "add_address": "Використати іншу адресу",
+        "add_delivery_instructions": "Додати інструкції з доставки",
+        "edit": "Редагувати",
+        "delete": "Видалити",
+        "address_more": "Більше дій для цієї адреси",
+        "address_edit": "Редагувати адресу",
+        "address_delete": "Видалити адресу",
+        "address_confirm": "Ви впевнені, що хочете видалити цю адресу зі свого облікового запису?",
+        "address_default": "Встановити за замовчуванням",
+        "address_form": {
+          "add_address": "Додати адресу",
+          "save": "Зберегти",
+          "cancel": "Скасувати",
+          "generic_error": "Виникла проблема зі збереженням вашої адреси. Спробуйте ще раз.",
+          "one_time_address_subtitle": "Використайте одноразову адресу для цього замовлення"
+        },
+        "different_shipping_method_summary": "Введіть іншу адресу доставки, щоб переглянути доступні способи доставки",
+        "invalid_shipping_method_summary": "Введіть дійсну адресу доставки, щоб переглянути доступні способи доставки",
+        "method_summary": {
+          "incomplete_address_entered": "Введіть повну адресу доставки, щоб переглянути доступні способи доставки",
+          "incomplete_address_selected": "Виберіть повну адресу доставки, щоб переглянути доступні способи доставки"
+        },
+        "local_pickup": {
+          "search_address": "Пошук адреси",
+          "rollup_title": "Місце отримання",
+          "rollup_accessibility_label": "Варіанти місця отримання"
+        },
+        "missing_shipping_address": "Адреса доставки відсутня",
+        "split_shipping_merchandise_quantity_label_standard": "%{quantity} товарів",
+        "split_shipping_merchandise_quantity_label_additional": "+%{quantity} більше",
+        "split_shipping_merchandise_shipment_number": "Відвантаження %{number} з %{total}",
+        "pre_order_ships_now": "Відправляється зараз",
+        "pre_order_ships_later": "Відправлення пізніше",
+        "pre_order_ships_date": "Відправлення %{date}",
+        "split_shipping_shipped_by_shop": "Відправлено %{shop_name}",
+        "split_shipping_multiple_shipment_label": "Кілька відправлень",
+        "split_shipping_shipping_label": "Метод",
+        "split_shipping_shipment_notice": "Ваше замовлення прибуде через %{quantity_shipments}",
+        "split_shipping_first_shipment_notice": "Ваше перше замовлення надійде через %{quantity_shipments}",
+        "split_shipping_multiple_shipment_quantity_label": "%{quantity} відправлень",
+        "split_shipping_multiple_shipment_notice": "Ваше замовлення буде доставлено кількома партіями",
+        "split_shipping_multiple_shipment_notice_one_time_purchase": "Ваше замовлення прибуде %{quantity} відправлень",
+        "split_shipping_more_shipping_options": "Більше варіантів доставки",
+        "split_shipping_shipment_number": "Відвантаження %{number}",
+        "split_shipping_merchandise_quantity_label_inline_primary": "Кількість: %{quantity}",
+        "split_shipping_option_free": "Безкоштовна доставка",
+        "split_shipping_option_lowest_price": "Найнижча ціна",
+        "split_shipping_option_fastest": "Найшвидший",
+        "split_shipping_option_recommended": "Рекомендовано",
+        "split_shipping_option_custom": "Користувацька"
       },
       "thank_you": {
         "attempted_delivery_local_title": "Пропущена доставка",
@@ -1712,6 +1832,15 @@
       "tooltip": {
         "accessibility_label_context": "Більше інформації про %{context}",
         "additional_payment_methods": "Додаткові способи оплати"
+      },
+      "localized_fields": {
+        "additional_information": {
+          "title": "Додаткова інформація",
+          "shipping_credential_kr": "Особистий митний кодекс",
+          "shipping_credential_cn": "Ідентифікаційний номер мешканця",
+          "tax_credential_it": "Податковий код (необов'язково)",
+          "tax_email_it": "ПЕК (необов'язково)"
+        }
       }
     },
     "subscriptions": {
