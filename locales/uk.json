@@ -1,0 +1,290 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "shopify": {
+    "sentence": {
+      "two_words_connector": " і ",
+      "last_word_connector": ", та "
+    },
+    "checkout": {
+      "address_management": {
+        "confirm_address_deletion": "Ви впевнені, що хочете видалити адресу {{address}} ?"
+      },
+      "general": {
+        "page_title": "Оформлення замовлення",
+        "error_page_title": "Помилка",
+        "skip_to_content": "Перейти до змісту",
+        "breadcrumb": "Хлібна крихта",
+        "continue_button_label": "Продовжити",
+        "complete_purchase_button_label": "Завершити замовлення",
+        "pay_now_button_label": "Сплатити зараз",
+        "authenticate_purchase_button_label": "Автентифікувати платіж",
+        "edit_link_label": "Редагувати",
+        "all_rights_reserved": "Всі права захищено %{shop_name}",
+        "print_policies_link_label": "Друк",
+        "cart": "Кошик",
+        "close_modal_label": "Закрити",
+        "close_notice_label": "Закрити",
+        "expand_notice_label": "Переглянути більше",
+        "continue_to_shipping_method": "Продовжити доставку",
+        "continue_to_payment_method": "Перейти до оплати",
+        "continue_to_review": "Переглянути замовлення",
+        "back_to_cart": "Повернутися до кошика",
+        "back_to_contact_information": "Повернутися до інформації",
+        "back_to_shipping_method": "Повернення до доставки",
+        "back_to_payment_method": "Повернутися до оплати",
+        "choose_shipping_method": "Виберіть спосіб доставки",
+        "choose_payment_method": "Виберіть спосіб оплати",
+        "choose_billing_address": "Виберіть платіжну адресу",
+        "contact_us_html": "Зв'яжіться з нами для отримання додаткової інформації",
+        "autocomplete_title": "Пропозиції",
+        "autocomplete_single_item": "1 товар доступний",
+        "autocomplete_multi_item": "Доступно {{number}} товарів",
+        "autocomplete_close": "Закрити пропозиції",
+        "forwarding_indicator": {
+          "new_window": "Відкривається в новому вікні.",
+          "external": "Відкриває зовнішній вебсайт.",
+          "external_and_new_window": "Відкриває зовнішній веб-сайт у новому вікні."
+        },
+        "checkout_context": {
+          "step_one": "%{shop_name} - Оформити замовлення"
+        },
+        "tooltip_accessibility_label": "Більше інформації",
+        "qr_code": "QR-код",
+        "errors": {
+          "only_empty_terms_accepted": "Ця політика приймає лише порожні терміни.",
+          "session_identifier_not_unique_error": "Щось пішло не так з вашим замовленням, спробуйте оформити замовлення ще раз.",
+          "line_item_limit_reached": "Досягнуто максимальної кількості позицій.",
+          "session_is_already_finished": "Цей сеанс оформлення замовлення вже завершено.",
+          "merchandise": {
+            "only_value_constraint": "У введених даних про товари дозволено вводити лише точні значення.",
+            "merchandise_not_found": "Товар не знайдено.",
+            "merchandise_variant_not_found": "Варіант товару не знайдено.",
+            "merchandise_not_applicable": "Варіант товару неможливо придбати.",
+            "mixed_currencies": "У розділі \"Оформлення замовлення\" є позиції з різними валютами.",
+            "bundle_products_not_supported_for_b2b": "Комплектні товари не можна додавати до замовлень B2B для цього місцезнаходження.",
+            "gift_card_quantity_mismatch": "Під час визначення кодів подарункових карток кількість товару в позиції та кількість кодів подарункових карток повинні збігатися.",
+            "gift_card_not_supported": "Подарункові картки не підтримуються в цій касі.",
+            "gift_card_not_unique": "Подарункова карта з кодом {{code}} зустрічається кілька разів у цій процедурі оформлення замовлення. Коди форматуються перед порівнянням.",
+            "gift_card_used": "Код подарункової картки {{code}} вже призначено подарунковій картці. Коди форматуються перед порівнянням.",
+            "gift_card_invalid": "Код подарункової картки {{code}} недійсний.",
+            "gift_card_code_changed": "Код подарункової картки {{proposed_code}} було змінено на {{formatted_code}} відповідно до правил форматування.",
+            "gift_card_with_attributes_not_supported": "Подарункові картки з власними атрибутами не підтримуються в цій касі.",
+            "gift_card_with_components_not_supported": "Подарункові картки з компонентами не підтримуються в цій касі.",
+            "selling_plan_mismatch": "Підписку оновлено.",
+            "selling_plan_not_supported": "Підписки не підтримуються.",
+            "selling_plan_not_supported_b2b": "Підписки не підтримуються для оформлення замовлення B2B.",
+            "price_mismatch": "Попередньо запропонована ціна на цей товар була недійсною та була оновлена.",
+            "inventory_not_found": "Не знайдено товару на складі.",
+            "product_not_published": "Продукт не опубліковано.",
+            "product_not_published_in_buyer_location": "Товар не опубліковано в місці розташування покупця.",
+            "duplicated_stable_id": "Ця лінійка товарів має той самий ідентифікатор stable-ID, що й інша лінійка.",
+            "minimum_quantity_not_met": "Кількість деяких товарів не відповідає мінімально необхідному.",
+            "maximum_quantity_exceeded": "Кількість деяких товарів перевищує максимально дозволену.",
+            "quantity_increment_not_met": "Кількість деяких товарів не відповідає лімітам замовлення.",
+            "quantity_rules_not_met": "Кількість деяких товарів не відповідає лімітам замовлення.",
+            "bundle_requires_components": "Цей комплект товарів не має компонентів.",
+            "title_too_long": "Назва товару занадто довга.",
+            "title_empty": "Назва товару порожня."
+          },
+          "buyer_identity": {
+            "business_customer_does_not_match_company": "Контактна особа компанії не має доступу до інформації про компанію.",
+            "customer_account_required": "Ви повинні увійти, щоб продовжити.",
+            "company_location_required": "Клієнт повинен вибрати місцезнаходження компанії, щоб продовжити.",
+            "company_purchase_permission_required": "Клієнт не має дозволу розміщувати замовлення компанії.",
+            "personal_order_not_allowed": "Особисті замовлення в цьому магазині не приймаються.",
+            "lost_access_to_company": "Клієнт втратив доступ до будь-якої компанії.",
+            "contact_info_does_not_match_customer_account": "Контактна інформація має збігатися з обліковим записом, у який ви ввійшли.",
+            "phone_number_does_not_match_expected_pattern": "Вказаний номер телефону не відповідає очікуваному шаблону.",
+            "email_required": "Під час придбання товару за підпискою потрібна електронна адреса.",
+            "email_domain_is_invalid": "Цей вказаний домен неможливо розв'язати.",
+            "missing_contact_method": "Відсутній дійсний спосіб зв'язку.",
+            "checkout_completion_target_is_missing": "Відсутнє цільове значення для завершення оформлення замовлення.",
+            "invalid_customer_profile": "Надано недійсний профіль клієнта.",
+            "customer_profile_access_restricted": "Офіційний кабінет не має дозволу на доступ до профілю клієнта.",
+            "checkout_completion_target_is_invalid_proc": "Недійсна ціль завершення оформлення замовлення.",
+            "buyer_identity_presentment_currency_does_not_match": "Виникла проблема з обробкою вашого замовлення. Спробуйте ще раз через кілька хвилин."
+          },
+          "delivery": {
+            "only_one_delivery_line_allowed": "Кошик повинен мати лише один рядок доставки.",
+            "wrong_number_of_delivery_lines": "Для кожної групи товарів необхідно вказати лінію доставки.",
+            "external_delivery_promise_error": "Помилка отримання зовнішньої обіцянки доставки.",
+            "options_instructions_invalid": "Вказані інструкції не відповідають очікуваному шаблону.",
+            "destination_address_required": "Для продовження потрібна адреса призначення.",
+            "pickup_points_unavailable": "Пункти видачі наразі недоступні.",
+            "local_pickup_delivery_line_detail_changed": "Щоб продовжити, необхідно змінити поточну стратегію доставки на місцевому самовивозі.",
+            "selected_pickup_option_no_longer_available": "Раніше вибраний варіант самовивозу більше недоступний.",
+            "local_pickup_no_delivery_strategy_available": "Не знайдено доступної стратегії доставки з місцевим самовивозом.",
+            "origin_location_id_required": "Ідентифікатор місця відправлення потрібен, коли запитується спосіб доставки RETAIL.",
+            "invalid_origin_location_id": "Не вдалося знайти місцезнаходження, що відповідає ідентифікатору вихідного місця розташування."
+          }
+        }
+      },
+      "stock": {
+        "unpurchasable_product": {
+          "message": "Ці товари недоступні для замовлень B2B.",
+          "status_column_header": "Недоступно"
+        },
+        "unpurchasable_product_generic": {
+          "title": "Непроданий продукт",
+          "header": "Деякі товари було видалено з вашого кошика",
+          "message": "Ці товари недоступні.",
+          "status_column_header": "Недоступно"
+        },
+        "unfulfillable_product": {
+          "title": "Доставка недоступна",
+          "message": {
+            "one": "%{delivery_method} більше не доступний для цього товару.",
+            "other": "%{delivery_method} більше не доступний для цих товарів."
+          },
+          "default_message": {
+            "one": "Вибраний спосіб доставки більше недоступний для цього товару.",
+            "other": "Вибраний спосіб доставки більше не доступний для цих товарів."
+          }
+        },
+        "unshippable_product": {
+          "title": "Доставка недоступна",
+          "header": {
+            "one": "Доставка для %{count} товару недоступна",
+            "other": "Доставка недоступна для %{count} товарів"
+          },
+          "message": {
+            "one": "Цей товар буде видалено з вашого кошика, оскільки для вашої адреси немає доступних способів доставки.",
+            "other": "Ці товари будуть видалені з вашого кошика, оскільки для вашої адреси немає доступних способів доставки."
+          },
+          "status_column_header": "Без доставки"
+        },
+        "price_update": {
+          "title": "Оновлення ціни",
+          "description": "Ціни на ці товари змінилися та оновлені у вашому кошику.",
+          "updated_price": "Оновлена ​​ціна"
+        },
+        "price_and_quantity_update": {
+          "title": "Оновлення ціни та кількості",
+          "description": "Ціни та доступна кількість цих товарів змінилися та оновлюються у вашому кошику."
+        },
+        "out_of_stock": {
+          "description": "Ці товари більше не доступні та були видалені з вашого кошика.",
+          "items_unavailable": "Деякі товари більше недоступні та були видалені з вашого кошика."
+        },
+        "out_of_stock_in_context_label": "Цей продукт недоступний у вашій країні/регіоні."
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "Недоступний товар",
+          "other": "Недоступні товари"
+        },
+        "products_not_available": {
+          "one": "Цей товар буде видалено з вашого кошика, оскільки він недоступний у вашій країні/регіоні.",
+          "other": "Ці товари будуть видалені з вашого кошика, оскільки вони недоступні у вашій країні/регіоні."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "Цей продукт недоступний у вашій країні/регіоні.",
+          "other": "Ці продукти недоступні у вашій країні/регіоні."
+        },
+        "unavailable_label": "Недоступно"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "Цей товар недоступний для доставки до %{location_name}.",
+          "some_products_other": "Ці товари недоступні для доставки до %{location_name}.",
+          "all_products_one": "Товар у вашому кошику недоступний для доставки до %{location_name}.",
+          "all_products_other": "Товари у вашому кошику недоступні для доставки до %{location_name}."
+        },
+        "missing_country_fallback": "твоя країна",
+        "indeterminate_location_fallback": "ваше місцезнаходження",
+        "cart_updated": "Ваш кошик оновлено.",
+        "change_address_only": "Змініть адресу доставки, щоб продовжити.",
+        "change_address_or_remove": "Змініть адресу доставки або %{remove_action}.",
+        "remove_items_action": {
+          "one": "видалити недоступний товар",
+          "other": "видалити недоступні елементи"
+        },
+        "empty_cart_action": "спорожніть кошик та поверніть його до магазину",
+        "unavailable_line_item": "%{назва_продукту} / %{лабеля_варіанту}"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "Доставка для %{count} товару недоступна",
+            "other": "Доставка недоступна для %{count} товарів"
+          },
+          "message": {
+            "one": "Цей товар буде видалено з вашого кошика, оскільки для вашої адреси немає доступних способів доставки.",
+            "other": "Ці товари будуть видалені з вашого кошика, оскільки для вашої адреси немає доступних способів доставки."
+          },
+          "label": "Без доставки"
+        }
+      },
+      "order_summary": {
+        "title": "Зведення замовлення",
+        "group_title_label": "Частина \"%{group_title}\"",
+        "for_add_on": "Для: %{group_title}",
+        "from_shop_heading": "З %{shop_name}",
+        "from_other_stores_heading": "З інших магазинів",
+        "number_items": {
+          "one": "%{count} елемент",
+          "other": "%{count} елементів"
+        },
+        "view_all_items": {
+          "one": "Переглянути %{count} елемент",
+          "other": "Переглянути всі %{count} елементи"
+        },
+        "more_items_modal": {
+          "search_item": "Пошук",
+          "clear_search": "Очистити пошук",
+          "empty_results": "Не знайдено результатів для запиту \"%{searchText}\". Перевірте орфографію або використайте інше слово чи фразу.",
+          "number_items_shown": "%{shownNumber} з %{totalNumber} елементів"
+        },
+        "order_name_label": "Замовлення %{name}",
+        "shopping_cart_label": "Кошик для покупок",
+        "discount_title": "Знижка",
+        "discount_title_stacking": {
+          "one": "Знижка",
+          "other": "Знижки"
+        },
+        "discount_order_stacking": {
+          "one": "Знижка на замовлення",
+          "other": "Знижки на замовлення"
+        },
+        "discount_label": "Код знижки",
+        "discount_not_found": "Не вдалося знайти дійсну знижку, що відповідає введеному коду",
+        "discount_placeholder": "Код знижки",
+        "discount_code_applied": "Код знижки застосовано",
+        "discount_code_allocations_mismatch": "Ваш код знижки <strong style=\"text-transform:uppercase\">%{code}</strong> змінився. Перегляньте свій кошик і спробуйте ще раз.",
+        "order_discounts_apply_to_local_shop": "Знижки на замовлення застосовуються лише до товарів з %{shop_name}",
+        "gift_card_applied": "Подарункова карта застосована",
+        "enter_shipping_address": "Введіть адресу доставки",
+        "gift_card_title": "Подарункова карта",
+        "gift_card_label": "Подарункова карта",
+        "gift_card_placeholder": "Подарункова карта",
+        "gift_card_and_discount_title": "Код знижки або подарункова карта",
+        "gift_card_and_discount_label": "Код знижки або подарункова карта",
+        "gift_card_and_discount_placeholder": "Код знижки або подарункова карта",
+        "gift_cards_apply_to_local_shop": "Подарункові картки діють лише на товари з %{shop_name}",
+        "add_discount_or_gift_card": "Додати код знижки або подарункову карту",
+        "remove_gift_card_label": "Прозора подарункова карта",
+        "remove_discount_label": "Видалити знижку",
+        "return_restocking_fee_label": "Плата за поповнення запасів",
+        "return_shipping_fee_label": "Зворотна доставка",
+        "free_shipping_discount_label": "Безкоштовна доставка",
+        "applied_free_shipping_discount_label": "Застосовано",
+        "apply_discount_button_label": "Застосувати",
+        "applied_discount_message": "%{amount} знижки від загальної вартості замовлення",
+        "discount_has_been_applied": "Знижку застосовано",
+        "discount_has_been_removed": "Знижку видалено",
+        "gift_card_has_been_applied": "Подарункову карту застосовано",
+        "gift_card_has_been_removed": "Подарункову картку видалено",
+        "gift_card_subscriptions_notice": "Подарункові картки будуть застосовані лише до вашого першого платежу",
+        "discount_already_applied": "До цього замовлення застосовано знижку. Ви не можете додати ще одну знижку."
+      }
+    }
+  }
+}
