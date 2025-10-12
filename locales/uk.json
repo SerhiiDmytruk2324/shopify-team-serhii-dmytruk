@@ -1532,7 +1532,69 @@
         "pickup_point": "Пункт видачі"
       },
       "show_items": "Показати елементи",
-      "show_order_summary": "Показати зведення замовлення"
+      "show_order_summary": "Показати зведення замовлення",
+      "hide_order_summary": "Приховати зведення замовлення",
+      "subtitle": "Підтверджено {{date}}",
+      "subtotal": "Проміжний підсумок",
+      "summary_list_title_accessibility_label": "Замовити товари",
+      "summary_title": "Зведення замовлення",
+      "summary_totals_title_accessibility_label": "Загальна сума замовлення",
+      "shop_order_tracking": {
+        "download_shop_to_track": "Завантажити магазин для відстеження посилки",
+        "track_order_with_shop": "Відстежуйте замовлення за допомогою магазину",
+        "title_header": "Відскануйте за допомогою телефону",
+        "real_time_delivery_updates": "Магазин надсилатиме вам оновлення щодо доставки в режимі реального часу після відправлення вашого замовлення."
+      },
+      "edit_summary": {
+        "added": "Додано",
+        "added_with_quantity": "Додано {{quantity}}",
+        "removed": "Видалено",
+        "removed_with_quantity": "Видалено {{quantity}}",
+        "updated_at": "Ваше замовлення було оновлено {{date}}",
+        "returned": "Повернуто",
+        "returned_with_quantities": "Повернуто {{delta}} з {{total}}",
+        "removed_with_quantities": "Видалено {{delta}} з {{total}}",
+        "return_line_item_removed": "Вилучено з повернення",
+        "return_line_item_removed_with_quantities": "Видалено {{delta}} з повернення"
+      },
+      "shop_pay": {
+        "order_completed_with": "Замовлення виконано з",
+        "learn_more": "Дізнатися більше"
+      },
+      "taxes": "Податки",
+      "taxes_included": "Включаючи {{amount}} податків",
+      "duties_and_taxes_included": "Загальна сума включає мита та податки. Без додаткових зборів за доставку.",
+      "duties": "Обов'язки",
+      "ok_duties_tooltip": "Це замовлення відправляється з іншої країни, тому до загальної суми вашого замовлення додано мито.",
+      "error_duties_tooltip": "Це замовлення відправляється з іншої країни, тому під час доставки можуть стягуватися мита та податки.",
+      "zero_duties_tooltip": "Це замовлення відправляється з іншої країни. Мито на замовлення такої вартості не стягується.",
+      "tip": "Чайові",
+      "title": "Замовлення {{name}}",
+      "total": "Всього",
+      "unit_price": "{{price}} /шт.",
+      "pagination": {
+        "load_more": "Завантажити більше",
+        "load_more_accessibility_label": "Завантажити більше елементів",
+        "loading_accessibility_label": "Завантаження елементів"
+      },
+      "login_to_view_all_order_details": "Увійдіть, щоб переглянути всі деталі замовлення.",
+      "log_in": "Увійти",
+      "logged_in_account_no_permission_to_order": "Ви ввійшли як {{email}} . Цей обліковий запис не має дозволу на керування цим замовленням.",
+      "log_in_to_a_different_account": "Увійти в інший обліковий запис",
+      "fees": {
+        "restocking_fee": "Плата за поповнення запасів",
+        "return_shipping_fee": "Зворотна доставка"
+      },
+      "vat_invoices": {
+        "title": "ПДВ-рахунки-фактури"
+      },
+      "link_sent": "Посилання надіслано",
+      "cash_rounding": "Округлення готівки",
+      "adjusted_payment": "Скоригований платіж",
+      "adjusted_total": "Скоригована сума",
+      "due_on_date": "Термін виконання: {{date}}",
+      "due_on_fulfillment": "Підлягає виконанню",
+      "due_on_receipt": "Оплата при отриманні"
     },
     "date": {
       "humanize": {
@@ -1671,7 +1733,21 @@
       "save": "Зберегти",
       "save_accessibility_label": "Зберегти адресу {{address}}",
       "section_title_accessibility_label": "Додати адресу",
-      "update_success_notification": "Адресу оновлено"
+      "update_success_notification": "Адресу оновлено",
+      "attention": "Увага",
+      "attention_company": "Компанія/увага",
+      "attention_help_text": "Ім'я особи або відділу",
+      "auto_complete_close_accessibility_label": "Закрити пропозиції",
+      "auto_complete_title": "Пропозиції",
+      "billing_address": "Використовувати як платіжну адресу",
+      "cancel": "Скасувати",
+      "cancel_accessibility_label": "Скасувати редагування адреси {{address}}",
+      "creation_success_notification": "Адресу додано",
+      "default_address": "Це моя адреса за замовчуванням",
+      "default_address_creation_success_notification": "Додано адресу за замовчуванням",
+      "default_address_update_success_notification": "Адресу за замовчуванням оновлено",
+      "loading_add_form_accessibility_message": "Завантаження форми нової адреси",
+      "loading_edit_form_accessibility_message": "Завантаження форми редагування адреси"
     },
     "B2B": {
       "account_information": {
@@ -1918,6 +1994,50 @@
       "month": {
         "one": "місяць"
       }
+    },
+    "addresses": {
+      "add_button": "Додати адресу",
+      "add_button_text": "Додати",
+      "add_button_accessibility_label": "Додати адресу",
+      "back_button": "Назад",
+      "back_button_accessibility_label": "Повернутися до редагування адреси {{address}}",
+      "add_address_banner": "Додайте адреси для використання під час оформлення замовлення",
+      "no_addresses_banner": "Адреси не додано",
+      "address_deleted_notification": "Адресу видалено",
+      "cancel_adding_address_accessibility_label": "Скасувати додавання адреси",
+      "cancel_deletion_button": "Скасувати",
+      "cancel_deletion_button_accessibility_label": "Скасувати видалення {{address}}",
+      "default_address": {
+        "title": "Адреса за замовчуванням",
+        "title_accessibility_label": "Адреса за замовчуванням: {{address}}"
+      },
+      "delete_button": "Видалити",
+      "delete_button_accessibility_label": "Видалити {{address}}",
+      "delete_confirmation_button": "Видалити адресу",
+      "delete_confirmation_button_accessibility_label": "Видалити {{address}}",
+      "delete_confirmation_message": "Видалити адресу? Існуючі замовлення залишаються в силі.",
+      "delete_confirmation_title": "Видалити адресу?",
+      "delete_confirmation_description": "Існуючі замовлення залишаються в силі.",
+      "edit_button": "Редагувати",
+      "edit_button_accessibility_label": "Редагувати {{address}}",
+      "edit_section_accessibility_label": "Редагувати {{address}}",
+      "edit_modal_title": {
+        "default": "Редагувати адресу",
+        "billing": "Редагувати платіжну адресу",
+        "shipping": "Редагувати адресу доставки"
+      },
+      "loading_accessibility_message": "Завантаження адреси",
+      "loading_addresses_accessibility_message": "Завантаження адрес",
+      "loading_billing_accessibility_message": "Завантаження платіжної адреси",
+      "loading_finished_accessibility_message": "Нова сторінка адрес завантажилася",
+      "loading_shipping_accessibility_message": "Завантаження адреси доставки",
+      "pagination": {
+        "load_more": "Завантажити більше",
+        "load_more_accessibility_label": "Завантажити більше адрес"
+      },
+      "save_new_address_accessibility_label": "Зберегти адресу",
+      "title": "Адреси",
+      "billing_address_dropdown_placeholder": "Платіжна адреса"
     }
   },
   "customer": {
