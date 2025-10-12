@@ -831,7 +831,122 @@
             "web_component_error": "Виникла проблема із завантаженням цієї сторінки"
           }
         },
-        "saved_by_payment_method": "Збережено %{payment_method}"
+        "saved_by_payment_method": "Збережено %{payment_method}",
+        "pay_with_payment_method": "Оплата за допомогою %{payment_method}",
+        "different_credit_card_label": "Використайте іншу кредитну картку",
+        "same_billing_address_label": "Те саме, що й адреса доставки",
+        "different_billing_address_label": "Використати іншу платіжну адресу",
+        "billing_address_associated_with_mandate": "Використати адресу, пов’язану зі способом оплати",
+        "billing_address_associated_with_mandate_info": "Якщо ви бажаєте змінити свою платіжну адресу, будь ласка, видаліть та повторно введіть дані своєї кредитної картки.",
+        "free_order_notice_html": "Ваше замовлення <strong>безкоштовне</strong> . Оплата не потрібна.",
+        "express_checkout_free_order": "З вас не стягуватиметься плата за безкоштовне замовлення",
+        "order_covered_by_gift_cards_notice": {
+          "one": "Ваше замовлення покривається вашою подарунковою карткою.",
+          "other": "Ваше замовлення покривається вашими подарунковими картками."
+        },
+        "offsite_gateway_redirect_hint": "Після натискання кнопки «%{button_label}» вас буде перенаправлено на сторінку %{gateway_label} для безпечного завершення покупки.",
+        "offsite_gateway_review_page_redirect_hint": "Після перевірки вашого замовлення вас буде перенаправлено на %{gateway_label} для безпечного завершення покупки.",
+        "offsite_gateway_redirect_hint_multi_currency_html": "%{gateway_label} всього %{total_shop_price}",
+        "offsite_gateway_redirect_hint_no_button_label": "Після продовження вас буде перенаправлено на %{gateway_label} для безпечного завершення покупки.",
+        "receiver_payment_experience_hint": "Після оформлення замовлення ви отримаєте платіжні реквізити. Здійсніть оплату в Multibanco або онлайн протягом %{due_days} днів.",
+        "billing_address_title": "Платіжна адреса",
+        "billing_address_rollup_accessibility_label": "Варіанти платіжної адреси",
+        "billing_address_description": "Виберіть адресу, яка відповідає вашій картці або способу оплати.",
+        "billing_address_description_no_shipping_address": "Введіть адресу, яка відповідає вашій картці або способу оплати.",
+        "no_js_credit_card_fields_redirect_hint": "Вас буде перенаправлено для додавання платіжної інформації.",
+        "card_fields_container_prefix": "Польовий контейнер для:",
+        "card_fields_unavailable_html": {
+          "one": "Оплата кредитними та дебетовими картками наразі недоступна.<br> <a href=\"%{current_url}\">Оновіть цю сторінку</a> або спробуйте ще раз пізніше.",
+          "other": "Оплата кредитними та дебетовими картками наразі недоступна.<br> <a href=\"%{current_url}\">Оновіть цю сторінку</a> або спробуйте інший спосіб оплати."
+        },
+        "card_fields_processing_error": "Виникла проблема з обробкою платежу. Спробуйте оновити цю сторінку або перевірте підключення до Інтернету.",
+        "technical_error": "Наразі платежі неможливо обробити через технічну проблему. Спробуйте ще раз через кілька хвилин.",
+        "no_method_error": "Цей магазин зараз не може приймати платежі.",
+        "not_configured_error": "Цей магазин зараз не може приймати платежі.",
+        "missing_credit_card_error": "Введіть дані вашої картки, щоб завершити оплату",
+        "shop_pay_ideal_unavailable_error": "iDEAL недоступний для цього замовлення. Виберіть інший спосіб оплати.",
+        "payment_method_not_available_for_shipping_address_error": "Спосіб оплати недоступний для вибраної адреси доставки. Виберіть інший спосіб оплати.",
+        "billing_address_not_supported_for_payment_method_error": "Цей спосіб оплати недоступний для вашої платіжної адреси та валюти. Будь ласка, спробуйте інший спосіб оплати.",
+        "generic_incorrect_card_info": "Не вдалося перевірити ваші платіжні дані. Перевірте дані вашої картки та спробуйте ще раз.",
+        "sofort_label": "Банківський переказ у Софорті",
+        "paypal_wallet_label": "Гаманець PayPal",
+        "shop_pay_installments_label": "Оплата частинами в магазині",
+        "paypal_modal": {
+          "order_contains_subscriptions": "Підписка",
+          "order_contains_fixed_selling_plans": "Загальна сума може не включати податки, доставку, відстрочені платежі та деякі знижки. Продовжуйте оформлення замовлення, щоб дізнатися суму до сплати сьогодні."
+        },
+        "klarna_label": "Кларна",
+        "klarna_pay_later_label": "Платіть пізніше за допомогою Klarna",
+        "klarna_pay_now_label": "Сплатіть зараз за допомогою Klarna",
+        "bancontact_label": "Банкомат",
+        "giropay_label": "Жиропей",
+        "multibanco_label": "Мультибанк",
+        "eps_label": "eps-надмір",
+        "klarna_slice_it_label": "Фінанси з Klarna",
+        "ideal_label": "ІДЕАЛ",
+        "bank_picker_label": "Банк",
+        "afterpay_label": "Післяплата",
+        "cashapppay_label": "Оплата готівкою в додатку",
+        "przelewy24_label": "Пшелеви24",
+        "blik_label": "Блік",
+        "twint_label": "ТВІНТ",
+        "mobilepay_label": "Мобільні платежі",
+        "swish_label": "Свист",
+        "vipps_label": "Віппс",
+        "kcp_creditcard_label": "Кредитна картка KCP",
+        "usdc_cashback_title": "1% кешбеку",
+        "usdc_cashback_additional_info": "Отримайте 1% назад у USDC безпосередньо на свій гаманець.",
+        "usdc_cashback_terms": "Застосовуються умови",
+        "purchase_options_card_update_agreement_label_html": "Оновлюючи спосіб оплати, ви авторизуєте платежі за будь-які регулярні або відкладені покупки відповідно до <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{cancellation_policy}\" href=\"%{policy_href}\">політики скасування</a> цього магазину.",
+        "subscription_card_update_agreement_label": "Зміна способу оплати оновить вашу підписку та майбутні регулярні платежі.",
+        "subscription_agreement_label": "Один або декілька товарів у вашому кошику є відкладеною покупкою або покупкою за підпискою. Продовжуючи оплату, ви погоджуєтеся з тим, що з вашого способу оплати буде автоматично стягуватися плата за ціною та з частотою, зазначеними на цій сторінці, доки не завершиться термін дії або ви не скасуєте замовлення. Усі скасування підлягають умовам %{cancelled}.",
+        "subscription_agreement_cancelled": "політика скасування",
+        "subscription_heading": "Угода про підписку",
+        "subscription_agreement_label_html": "Я розумію, що погоджуюся на підписку. Вона поновлюватиметься за вказаною ціною та частотою, доки не закінчиться або не буде\n <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">скасовано</a> .\n",
+        "purchase_options_agreement_label": "Один або декілька товарів у вашому кошику є відкладеною або періодичною покупкою. Продовжуючи оплату, ви погоджуєтеся з тим, що з вашого способу оплати буде автоматично стягуватися плата за ціною та з частотою, зазначеними на цій сторінці, доки не завершиться термін дії або ви не скасуєте замовлення. Усі скасування підлягають %{cancellation_policy_label}.",
+        "purchase_options_agreement_label_html": "Я розумію, що один або декілька товарів у моєму кошику є відкладеною або повторюваною покупкою. Продовжуючи, я погоджуюся з \n<a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{subscription_policy}\" href=\"%{policy_href}\">політика скасування</a>\n і уповноважую вас стягувати кошти з мого способу оплати за цінами, з періодичністю та датами, зазначеними на цій сторінці, до мого\n замовлення виконано або я скасую, якщо це дозволено.\n",
+        "purchase_options_agreement_label_wallets": "Продовжуючи оплату, ви погоджуєтеся з майбутніми тарифами, зазначеними на цій сторінці, та політикою скасування.",
+        "change_currency_section_description": "Виберіть варіант валюти",
+        "no_real_orders_dev_store": "Цей магазин не може приймати реальні замовлення або реальні платежі.",
+        "waiting_on_payment_methods": "Отримання доступних способів оплати...",
+        "apple_pay_payment_error": "Ваш платіж не вдалося завершити. Спробуйте ще раз або скористайтеся іншим способом оплати.",
+        "taxes_not_included": "Податки не включені",
+        "no_taxes_banner_content": "Податки на це замовлення не стягуватимуться. Після отримання платежу податки більше не можна буде додавати.",
+        "paypal": {
+          "connect": "Натисніть, щоб підключити свій обліковий запис PayPal"
+        },
+        "apple": {
+          "connect": "Натисніть, щоб підключити свій обліковий запис Apple Pay",
+          "not_available": "Apple Pay недоступний у цьому браузері. Щоб підключити обліковий запис Apple Pay, потрібно використовувати Safari на пристрої Apple."
+        },
+        "google": {
+          "connect": "Натисніть, щоб підключитися до свого облікового запису Google Pay",
+          "error_authorizing": "Помилка авторизації платежу"
+        },
+        "account_connected": "Обліковий запис підключено.",
+        "mor_disclaimer_html": "Натискаючи нижче та завершуючи замовлення, ви погоджуєтеся придбати ваш(і) товар(и) у Global-e як офіційного продавця.\n для цієї транзакції, згідно з <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{mor_terms}\" href=\"%{terms_href}\">Умовами та положеннями</a> Global-e\n та <a class=\"link--small\" data-modal=\"true\" data-title-text=\"%{privacy_policy}\" href=\"%{policy_href}\">Політика конфіденційності</a> . Global-e – це міжнародна\n постачальник послуг виконання замовлень для %{shop_name}\n",
+        "pending_payment": {
+          "due_notice": "Ваш платіж у розмірі %{amount_due} має бути виконаний %{due_date}.",
+          "multibanco": {
+            "buyer_action_info": "Ваш платіж %{amount_due} настав.",
+            "instruction_html": "Здійсніть оплату в Multibanco або онлайн, використовуючи наведені нижче реквізити. Якщо у вас є запитання або ви хочете оновити платіжні реквізити, зверніться до %{contact_us}.",
+            "entity": "Сутність",
+            "reference": "Довідка",
+            "amount": "Сума",
+            "find_nearest_atm": "Знайти найближчий банкомат"
+          }
+        },
+        "update_payment_method": "Оновити спосіб оплати",
+        "order_covered_by_store_credit_notice": "Ваше замовлення покривається кредитом вашого магазину.",
+        "order_covered_by_redeemables_notice": "Ваше замовлення покрито.",
+        "store_credit": {
+          "label": "Кредит магазину",
+          "apply_label": "Застосувати кредит магазину",
+          "add_label": "Додати кредит магазину",
+          "manage_label": "Керування кредитом магазину",
+          "buying_gift_card": "Ви не можете використовувати кредит магазину для придбання подарункової картки",
+          "no_fixed_selling_plans": "Ви не можете використовувати магазинний кредит із опціями відстроченої покупки"
+        }
       },
       "billing": {
         "billing_address_title": "Рахунок на ім'я",
