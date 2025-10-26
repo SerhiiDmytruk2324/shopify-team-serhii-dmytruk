@@ -1,0 +1,59 @@
+{%- liquid
+  assign seen_colors = ''
+  assign color_count = 0
+-%}
+
+<div class="colors">
+  {%- for variant in product.variants limit: 100 -%}
+    {%- assign current_color = variant.options[option_index] -%}
+    
+    {%- if current_color != blank -%}
+      {%- if seen_colors contains current_color -%}
+        {%- continue -%}
+      {%- endif -%}
+      
+      {%- if color_count >= 3 -%}
+        {%- break -%}
+      {%- endif -%}
+      
+      {%- assign color_count = color_count | plus: 1 -%}
+      {%- assign seen_colors = seen_colors | append: current_color | append: ',' -%}
+      
+      {%- assign is_available = false -%}
+      {%- for v in product.variants -%}
+        {%- if v.options[option_index] == current_color and v.available -%}
+          {%- assign is_available = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+
+      {%- assign color_image = nil -%}
+      {%- for v in product.variants -%}
+        {%- if v.options[option_index] == current_color and v.image -%}
+          {%- assign color_image = v.image.src -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      
+      {%- if color_image == nil -%}
+        {%- assign color_image = product.featured_image.src -%}
+      {%- endif -%}
+
+      <button
+        type="button"
+        class="color-btn{% if color_count == 1 %} active{% endif %}{% unless is_available %} unavailable{% endunless %}"
+        data-color="{{ current_color | escape }}"
+        aria-label="{{-'products.card.select_color' | t -}} {{ current_color | escape }}">
+
+        <img
+          src="{{ color_image | image_url: width: 100 }}"
+          alt="{{ current_color | escape }}"
+          width="44"
+          height="44"
+          loading="lazy">
+        
+        <span class="unavailable-line"></span>
+      </button>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

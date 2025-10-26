@@ -1,0 +1,38 @@
+{
+  "header": {
+    "cart": "Кошик"
+  },
+  "footer": {
+    "login": "Вхід",
+    "search": "Пошук",
+    "copyright": "© 2025"
+  },
+  "a11y": {
+    "open_cart": "Відкрити кошик",
+    "footer_nav": "Навігація у підвалі",
+    "main_nav": "Головна навігація"
+  },
+  "nav": {
+    "all_products": "Усі товари",
+  },
+  "teaser": {
+    "title": "Рекомендовані товари",
+    "empty": "У цій колекції поки немає товарів"
+  },
+  "products": {
+    "options": {
+      "color": "Колір",
+      "size": "Розмір"
+    },
+    "card": {
+        "not_found": "Продукт не знайдено",
+        "available_prefix": "В наявності: ",
+        "not_available": "Не доступно",
+        "add_to_cart": "В кошик",
+        "select_size": "Виберіть розмір", 
+        "unavailable": "Tовар недоступний",
+        "select_color": "Виберіть колір "
+    },
+    "view": "Переглянути товар"
+  }
+}
