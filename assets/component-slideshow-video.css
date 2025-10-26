@@ -54,3 +54,59 @@ iframe.slideshow__video {
     height: 100vh; /* Make the container a specific height for mobile */
   }
 }
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Styles for native video element */
+video.slideshow__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Styles for iframe (YouTube/Vimeo) */
+iframe.slideshow__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw; /* Use viewport width */
+  height: 100vh; /* Use viewport height */
+  pointer-events: none; /* Prevent interaction */
+  border: none;
+  scale: 1.5; /* Scale up to remove black bars */
+}
+
+/* Optional: Adjust scale based on screen size */
+@media screen and (min-width: 750px) {
+  iframe.slideshow__video {
+    scale: 1; /* Larger scale for desktop */
+  }
+}
+@media screen and (max-width: 749px) {
+  /* This code applies to screens 749px or smaller (mobile) */
+
+  iframe.slideshow__video {
+    /* Adjust scale specifically for mobile, or remove it */
+    scale: 1; /* Experiment with this value */
+    /* Or, use a container with a fixed aspect ratio for predictable scaling */
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-container {
+    height: 100vh; /* Make the container a specific height for mobile */
+  }
+}

@@ -3,12 +3,22 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow-video.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'responsive-video.js' | asset_url }}" defer></script>
+{{ 'component-slideshow-video.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'responsive-video.js' | asset_url }}" defer></script>
 
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
       #Slider-{{ section.id }}::before,
       #Slider-{{ section.id }} .media::before,
+      #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+        padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
+        content: '';
+        display: block;
+      }
+        },
+        {
+          "type": "range",.media::before,
       #Slider-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
         padding-bottom: {{ 1 | divided_by: section.blocks.first.settings.image.aspect_ratio | times: 100 }}%;
         content: '';
@@ -131,6 +141,76 @@
         tabindex="-1"
       >
         <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
+          {%- if block.settings.video != blank -%}
+            <div class="video-container">
+              <video
+                class="slideshow__video"
+                autoplay
+                loop
+                muted
+                playsinline
+                poster="{{ block.settings.image | image_url: width: 1920 }}"
+              >
+                {%- # Mobile video source if available -%}
+                {%- if block.settings.video_mobile != blank -%}
+                  <source 
+                    media="(max-width: 749px)"
+                    src="{{ block.settings.video_mobile | file_url }}" 
+                    type="video/mp4"
+                  >
+                {%- endif -%}
+                {%- # Desktop video source -%}
+                <source 
+                  src="{{ block.settings.video | file_url }}" 
+                  type="video/mp4"
+                >
+              </video>
+            </div>
+          {%- elsif block.settings.video_url != blank or block.settings.video_url_mobile != blank -%}
+            <responsive-video class="video-container">
+              {%- # Desktop Video URL -%}
+              <div class="video-desktop" style="display: none;" data-media-query="min-width: 750px">
+                {%- if block.settings.video_url.type == "youtube" -%}
+                  <iframe
+                    src="https://www.youtube.com/embed/{{ block.settings.video_url.id }}?autoplay=1&loop=1&playlist={{ block.settings.video_url.id }}&mute=1&playsinline=1&controls=0"
+                    class="slideshow__video"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                {%- elsif block.settings.video_url.type == "vimeo" -%}
+                  <iframe
+                    src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}?autoplay=1&loop=1&background=1&muted=1"
+                    class="slideshow__video"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                {%- endif -%}
+              </div>
+              {%- # Mobile Video URL -%}
+              <div class="video-mobile" style="display: none;" data-media-query="max-width: 749px">
+                {%- assign mobile_video_url = block.settings.video_url_mobile | default: block.settings.video_url -%}
+                {%- if mobile_video_url.type == "youtube" -%}
+                  <iframe
+                    src="https://www.youtube.com/embed/{{ mobile_video_url.id }}?autoplay=1&loop=1&playlist={{ mobile_video_url.id }}&mute=1&playsinline=1&controls=0"
+                    class="slideshow__video"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                {%- elsif mobile_video_url.type == "vimeo" -%}
+                  <iframe
+                    src="https://player.vimeo.com/video/{{ mobile_video_url.id }}?autoplay=1&loop=1&background=1&muted=1"
+                    class="slideshow__video"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    loading="lazy"
+                  ></iframe>
+                {%- endif -%}
+              </div>
+            </responsive-video>
+          {%- elsif block.settings.image -%}
           {%- if block.settings.video != blank -%}
             <div class="video-container">
               <video
