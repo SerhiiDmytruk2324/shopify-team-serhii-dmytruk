@@ -1,0 +1,17 @@
+{% assign initial_variant = product.selected_or_first_available_variant %}
+
+<div class="price-container" id="variant-price">
+  <p class="price">
+    <span class="new-price" id="new-price-display">
+      {{ initial_variant.price | money }}
+    </span>
+
+    {% if initial_variant.compare_at_price > initial_variant.price %}
+      <span class="old-price line-through" id="old-price-display">
+        {{ initial_variant.compare_at_price | money }}
+      </span>
+    {% else %}
+      <span class="old-price line-through" id="old-price-display"></span>
+    {% endif %}
+  </p>
+</div>

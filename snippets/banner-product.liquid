@@ -1,0 +1,125 @@
+{%- assign product = product | default: all_products[handle] -%}
+{% if product == nil %}
+  <p>{{- 'products.product.banner.not_found' | t | default: 'Product not found' -}}</p>
+  {% break %}
+{% endif %}
+<script src="{{ 'product-spotlight.js' | asset_url }}" defer></script>
+<script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+{{ 'product-spotlight.css' | asset_url | stylesheet_tag }}
+
+<section class="spotlight container padding-lr">
+  <div class="spotlight__main mt-60">
+    <div class="gallery">
+      <div class="main-image-container">
+        <img
+          id="main-product-image"
+          src=""
+          alt="{{- product.title | escape -}}"
+          width="600"
+          height="600"
+          class="border-radius">
+
+        {% case product.vendor %}
+          {% when 'Nike' %}
+            <span class="badge">🔥 Nike</span>
+          {% when 'Adidas' %}
+            <span class="badge">⭐ Adidas</span>
+          {% else %}
+            <span class="badge">{{- product.vendor | escape -}}</span>
+        {% endcase %}
+      </div>
+      <div class="swiper thumbs-swiper">
+        <div class="swiper-wrapper" id="thumbs-swiper-wrapper"></div>
+      </div>
+    </div>
+    <div class="product-info options">
+      <h2 class="product-title">{{- product.title | escape -}}</h2>
+      <div class="price-container" id="variant-price">
+        {% capture price_html %}
+        {% render 'product-price'
+          , product: product %}
+          {% endcapture %}
+        {{- price_html -}}
+      </div>
+      {% assign color_index = nil %}
+      {% assign color_option_name = product.metafields.custom.option_color_name | default: 'Color' %}
+      {% assign normalized_color_name = color_option_name | downcase %}
+
+      {% for opt in product.options_with_values %}
+        {% assign opt_name = opt.name | downcase %}
+        {% if opt_name == normalized_color_name %}
+          {% assign color_index = forloop.index0 %}
+        {% endif %}
+      {% endfor %}
+
+      {% if color_index != nil %}
+        {% render 'color-buttons'
+          , product: product
+          , option_index: color_index %}
+      {% endif %}
+      {% assign initial_variant = product.selected_or_first_available_variant %}
+      <div
+        id="variant-stock"
+        data-available-prefix="{{- 'products.product.banner.available_prefix' | t | default: 'In Stock: ' -}}"
+        data-not-available-text="{{- 'products.product.banner.not_available' | t | default: 'Not Available' -}}"></div>
+      {% assign size_index = nil %}
+      {% assign size_option_name = product.metafields.custom.option_size_name | default: 'Size' %}
+      {% assign normalized_size_name = size_option_name | downcase | strip %}
+
+      {% for opt in product.options_with_values %}
+        {% assign opt_name = opt.name | downcase | strip %}
+        {% if opt_name contains normalized_size_name %}
+          {% assign size_index = forloop.index0 %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
+      {% if size_index != nil %}
+        <div class="size-options">
+          <div class="swatch-attribute-options" id="size-container"></div>
+        </div>
+
+        <script id="product-variants-data" type="application/json">
+          [
+            {% for variant in product.variants %}
+              {
+                "size": "{{- variant.options[size_index] | strip | default: '' -}}",
+                "color": "{{- variant.options[color_index] | strip | default: '' -}}",
+                "id": {{- variant.id -}},
+                "qty": {{- variant.inventory_quantity | default: 0 -}},
+                "available": {{- variant.available -}},
+                "price": {{- variant.price -}},
+                "compare_at_price": {{- variant.compare_at_price | default: 0 -}},
+                "price_money": "{{- variant.price | money | default: '1000000' -}}",
+                "compare_at_price_money": "{{- variant.compare_at_price | money | default: '1000000' -}}",
+                "imageUrl": {%- if variant.featured_image -%}"{{- variant.featured_image | image_url: width: 600 -}}"{%- else -%}""{%- endif -%},
+                "thumbUrl": {%- if variant.featured_image -%}"{{- variant.featured_image | image_url: width: 88 -}}"{%- else -%}""{%-endif -%}
+              }{%- unless forloop.last -%},{%- endunless -%}
+            {% endfor %}
+          ]
+        </script>
+      {% endif %}
+
+      {% assign initial_variant = product.selected_or_first_available_variant %}
+      <a
+        href="{{ routes.cart_url }}?variant={{ initial_variant.id | default: 0 }}&quantity=1"
+        id="add-to-cart-link"
+        class="btn border-radius btn-black add-to-cart center"
+        role="button">
+        {{- 'products.product.banner.add_to_cart' | t | default: 'Add To Cart' -}}
+      </a>
+
+
+      {% if product.description != blank %}
+        <p class="text-gray">{{- product.description | strip_html | truncate: 200 -}}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<script>
+      window.ProductSpotlightSettings = {
+    productUrl: '{{- product.url | escape -}}'
+  };
+</script>
