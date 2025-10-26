@@ -16,6 +16,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/slide-1.jpg",
+            "video_url": "https://www.youtube.com/watch?v=VW2nUA7yrJw",
+            "video_url_mobile": "https://www.youtube.com/watch?v=Px0xJ74orwk&pp=ygUTdmVydGljYWwgdmlkZW8gbmlrZQ%3D%3D",
             "image_overlay_opacity": 0,
             "heading": "<strong>MORE THAN JUST SHOES — IT’S A PART OF YOUR STORY.</strong>",
             "heading_size": "h1",
@@ -34,6 +36,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/slide-2.jpg",
+            "video_url": "",
+            "video_url_mobile": "",
             "image_overlay_opacity": 0,
             "heading": "<strong>More than just shoes — it’s a part of your story.</strong>",
             "heading_size": "h1",
@@ -52,6 +56,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/slide-3.jpg",
+            "video_url": "",
+            "video_url_mobile": "",
             "image_overlay_opacity": 0,
             "heading": "<strong>More than just shoes — it’s a part of your story.</strong>",
             "heading_size": "h1",
@@ -114,18 +120,14 @@
         "button"
       ],
       "disabled": true,
-      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
         "image_behavior": "none",
-        "image_behavior": "none",
         "desktop_content_position": "bottom-center",
         "desktop_content_alignment": "center",
         "show_text_box": false,
-        "show_text_box": false,
         "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
         "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
         "show_text_below": false
@@ -136,8 +138,6 @@
       "settings": {
         "collection": "all",
         "products_to_show": 8,
-        "collection": "all",
-        "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
@@ -145,11 +145,9 @@
         "description_style": "body",
         "columns_desktop": 4,
         "enable_desktop_slider": false,
-        "enable_desktop_slider": false,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -159,57 +157,12 @@
         "quick_add": "none",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_MTDq8G": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_rfhqKJ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_PcrKtY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_D83qfh": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_rfhqKJ",
-        "text_PcrKtY",
-        "button_D83qfh"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "slideshow_4ptgX8",
     "slideshow_4ptgX8",
     "image_banner",
     "featured_collection"

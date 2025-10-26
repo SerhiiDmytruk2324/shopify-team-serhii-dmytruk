@@ -290,17 +290,27 @@
   }
 
   function updateStockInfo(color, size) {
-    if (!elements.stockInfo) return;
+  if (!elements.stockInfo) return;
 
-    const variant = findVariant(color, size);
-    if (!variant) return;
+  const variant = findVariant(color, size);
+  if (!variant) return;
 
-    const text = variant.qty > 0
-      ? elements.stockInfo.dataset.availablePrefix + variant.qty
-      : elements.stockInfo.dataset.notAvailableText;
+  let text;
 
-    elements.stockInfo.textContent = text;
+  if (!variant.available) {
+    // Якщо variant недоступний — показуємо "Not Available"
+    text = elements.stockInfo.dataset.notAvailableText;
+  } else if (variant.qty > 0) {
+    // Якщо є реальна кількість — показуємо з числом
+    text = elements.stockInfo.dataset.availablePrefix + variant.qty;
+  } else {
+    // Якщо `available === true`, але `qty === 0` 
+    // (тобто не трекується інвентар) — показуємо "In Stock" без числа
+    text = elements.stockInfo.dataset.availablePrefix + 'Available';
   }
+
+  elements.stockInfo.textContent = text;
+}
 
   function updatePrice(color, size) {
     const variant = findVariant(color, size);

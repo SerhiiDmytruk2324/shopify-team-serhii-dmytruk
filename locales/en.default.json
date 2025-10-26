@@ -114,6 +114,19 @@
     "collection_title": "Your collection's name"
   },
   "products": {
+    "card": {
+        "not_found": "Product not found",
+        "available_prefix": "In Stock: ",
+        "not_available": "Not Available",
+        "add_to_cart": "Add to cart",
+        "select_size": "Select size",
+        "unavailable": "Unavailable",
+        "select_color": "Select color"
+    },
+    "options": {
+      "color": "Color",
+      "size": "Size"
+    },
     "product": {
       "add_to_cart": "Add to cart",
       "choose_options": "Choose options",

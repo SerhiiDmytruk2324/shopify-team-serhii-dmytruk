@@ -57,6 +57,67 @@
     --font-family: "Poppins"
     , sans-serif;
   }
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+  *,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+*:hover {
+    transition: all .2s ease-in-out;
+}
+
+ul, ol {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--dark);
+    background: var(--white);
+}
+
+h1,
+.h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+h1,
+.h1 {
+    font-weight: 700;
+}
+
+h2,
+h3 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
 
   .container {
     width: 100%;
@@ -78,10 +139,10 @@
   .btn {
     display: inline-block;
     padding: 16px 32px;
-    height: 56px;
     background-color: var(--white);
     color: var(--dark);
     text-decoration: none;
+    font-size: 1.6rem;
   }
 
   .btn:hover {
@@ -137,6 +198,10 @@
     }
   }
   /* Product Spotlight */
+  .gallery {
+    flex: 1;
+    width: 100%;
+}
   .spotlight__main {
     display: flex;
     flex-wrap: wrap;
