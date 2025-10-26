@@ -475,31 +475,31 @@
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
         },
         {
-          "type": "video",
-          "id": "video",
-          "label": "Desktop Video",
-          "info": "MP4 format recommended. This will be used for desktop and tablet devices."
-        },
-        {
-          "type": "video",
-          "id": "video_mobile",
-          "label": "Mobile Video",
-          "info": "Optional. Lower resolution MP4 for mobile devices. If not provided, desktop video will be used."
-        },
-        {
-          "type": "video_url",
-          "id": "video_url",
-          "accept": ["youtube", "vimeo"],
-          "label": "or Desktop Video URL",
-          "info": "Supports YouTube and Vimeo URLs. For desktop and tablet devices."
-        },
-        {
-          "type": "video_url",
-          "id": "video_url_mobile",
-          "accept": ["youtube", "vimeo"],
-          "label": "Mobile Video URL",
-          "info": "Optional. For mobile devices. If not provided, desktop video URL will be used."
-        },
+  "type": "video",
+  "id": "video",
+  "label": "Desktop Video",
+  "info": "Upload an MP4 file for desktop and tablet view. Recommended format: MP4."
+},
+{
+  "type": "video",
+  "id": "video_mobile",
+  "label": "Mobile Video",
+  "info": "Optional. Upload a lighter MP4 version for mobile devices. If left blank, the desktop video will be shown."
+},
+{
+  "type": "video_url",
+  "id": "video_url",
+  "accept": ["youtube", "vimeo"],
+  "label": "Desktop Video (YouTube/Vimeo)",
+  "info": "Paste a YouTube or Vimeo link for desktop and tablet view."
+},
+{
+  "type": "video_url",
+  "id": "video_url_mobile",
+  "accept": ["youtube", "vimeo"],
+  "label": "Mobile Video (YouTube/Vimeo)",
+  "info": "Optional. Paste a YouTube or Vimeo link for mobile devices. If left blank, the desktop video link will be used."
+},
         {
           "type": "range",
           "id": "image_overlay_opacity",
