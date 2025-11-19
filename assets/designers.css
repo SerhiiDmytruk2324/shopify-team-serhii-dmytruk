@@ -1,0 +1,122 @@
+.designers-heading {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.designer-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.designer-item {
+  max-width: 350px;
+  padding: 30px 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.05);
+
+  /* FLEXBOX PROPERTIES for the main card layout */
+  display: flex;
+  flex-direction: column; /* Stack all elements vertically */
+  align-items: stretch; /* Make children fill the width (except where overridden) */
+}
+
+
+/* --- Avatar/Image Styling --- */
+.designer-item img,
+.designer-item svg {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  align-self: center; /* Center the image within the flex container */
+  margin-bottom: 10px;
+}
+
+.bio {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.tags {
+  /* FLEXBOX PROPERTIES for the list of tags */
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows tags to wrap to the next line */
+}
+
+.tags li {
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1;
+}
+
+/* --- Portfolio Links Styling --- */
+.links li {
+  overflow: clip;
+  text-overflow: ellipsis;
+}
+
+.links li::marker {
+    color: #0070c9;
+}
+
+.links li a {
+  font-size: 15px;
+  color: #0070c9;
+  text-decoration: none;
+}
+
+/* --- Date of Birth Styling --- */
+.birthday {
+  font-size: 15px;
+  color: #333;
+}
+
+/* --- Verified Designer Badge (FLEXBOX) --- */
+.verification {
+  /* FLEXBOX PROPERTIES for the badge content */
+  display: flex;
+  gap: 8px;
+  align-items: center; /* Vertically align icon and text */
+  padding: 8px 12px;
+  width: fit-content;
+  margin: 10px auto 0 auto; /* Center the badge using auto margins */
+
+  /* Specific styling for the green verified badge */
+  background-color: #e6f7eb;
+  border: 1px solid #b7eb8f;
+  border-radius: 8px;
+}
+
+.verification.checked .svg-wrapper {
+  width: 28px; 
+  height: 18px;
+  /* FLEXBOX to ensure the SVG inside is perfectly centered */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verification.checked svg path {
+  fill: #52c41a;
+}
+
+.verification p {
+  font-weight: 600;
+  font-size: 15px;
+  color: #52c41a;
+}
+.verification .green {
+  color: inherit; 
+}

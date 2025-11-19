@@ -1,0 +1,118 @@
+{{ 'designers.css' | asset_url | stylesheet_tag }}
+
+<section class="designers section-{{ section.id }}">
+  <div class="container">
+    {% for block in section.blocks %}
+
+      {%- style -%}
+      .block-{{ block.id  }}-padding {
+        padding-top: {{ block.settings.padding_top | times: 0.75 | round: 0 }}px;
+        padding-bottom: {{ block.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+      }
+
+      @media screen and (min-width: 750px) {
+        .block-{{ block.id  }}-padding {
+          padding-top: {{ block.settings.padding_top }}px;
+          padding-bottom: {{ block.settings.padding_bottom }}px;
+        }
+      }{%- endstyle -%}
+
+      {% assign collection = collections[block.settings.collection] %}
+      {% assign designers = collection.metafields.custom.designer.value | default: blank %}
+
+      <div class="designers-wrapper block-{{ block.id }}-padding">
+        {% if block.settings.show_heading and block.settings.heading != blank  %}
+          <h2 class="designers-heading">{{ block.settings.heading }}</h2>
+        {% endif %}
+
+        {%- comment -%}
+          CASE 1: Designers from collection metafield
+        {%- endcomment -%}
+        {% if designers != blank %}
+          <div class="designer-items">
+            {% for designer in designers %}
+              {% render 'designer-item', designer: designer, settings: block.settings %}
+            {% endfor %}
+          </div>
+
+        {%- comment -%}
+          CASE 2: Single designer (metaobject)
+        {%- endcomment -%}
+        {% elsif block.settings.designer_ref != blank %}
+          {% assign designer_handle = block.settings.designer_ref %}
+          {% assign designer = metaobjects.designer[designer_handle] %}
+
+          {% if designer %}
+            {% render 'designer-item', designer: designer, settings: block.settings %}
+          {% endif %}
+
+        {%- comment -%}
+          CASE 3: Manual entry
+        {%- endcomment -%}
+        {% elsif block.settings.custom_name != blank or block.settings.custom_photo != blank or block.settings.custom_bio != blank %}
+          {% assign custom_tags = block.settings.custom_tags | split: ',' %}
+          {% assign custom_links = block.settings.custom_links | split: ',' %}
+          {% render 'designer-item',
+            designer: nil,
+            settings: block.settings,
+            name: block.settings.custom_name,
+            title: block.settings.custom_title,
+            bio: block.settings.custom_bio,
+            photo: block.settings.custom_photo,
+            tags: custom_tags,
+            links: custom_links,
+            date_of_birth: block.settings.custom_birthday,
+            verified_designer: block.settings.show_verification
+          %}
+
+        {%- comment -%}
+          CASE 4: Nothing set → fallback
+        {%- endcomment -%}
+        {% else %}
+          <p class="no-designers">{{ 'designers.no-designers' | t | default: 'Choose a designer' }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Designers",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "designers",
+      "name": "Designers",
+      "settings": [
+        { "type": "checkbox", "id": "show_heading", "label": "t:sections.designers.settings.show_heading.label", "default": true },
+        { "type": "text", "id": "heading", "label": "t:sections.designers.settings.heading.label", "default": "Our designers" },
+        { "type": "collection", "id": "collection", "label": "t:sections.designers.settings.collection.label" },
+        { "type": "metaobject", "id": "designer_ref", "metaobject_type": "designer", "label": "t:sections.designers.settings.designer_ref.label" },
+        { "type": "header", "content": "t:sections.designers.settings.header.content" },
+        { "type": "checkbox", "id": "show_img", "label": "t:sections.designers.settings.show_img.label", "default": true },
+        { "type": "image_picker", "id": "custom_photo", "label": "t:sections.designers.settings.custom_photo.label" },
+        { "type": "checkbox", "id": "show_name", "label": "t:sections.designers.settings.show_name.label", "default": true },
+        { "type": "text", "id": "custom_name", "label": "t:sections.designers.settings.custom_name.label" },
+        { "type": "checkbox", "id": "show_title", "label": "t:sections.designers.settings.show_title.label", "default": true },
+        { "type": "text", "id": "custom_title", "label": "t:sections.designers.settings.custom_title.label" },
+        { "type": "checkbox", "id": "show_bio", "label": "t:sections.designers.settings.show_bio.label", "default": true },
+        { "type": "richtext", "id": "custom_bio", "label": "t:sections.designers.settings.custom_bio.label" },
+        { "type": "checkbox", "id": "show_tags", "label": "t:sections.designers.settings.show_tags.label", "default": true },
+        { "type": "text", "id": "custom_tags", "label": "t:sections.designers.settings.custom_tags.label" },
+        { "type": "checkbox", "id": "show_links", "label": "t:sections.designers.settings.show_links.label", "default": true },
+        { "type": "text", "id": "custom_links", "label": "t:sections.designers.settings.custom_links.label" },
+        { "type": "checkbox", "id": "show_birthday", "label": "t:sections.designers.settings.show_birthday.label", "default": true },
+        { "type": "text", "id": "custom_birthday", "label": "t:sections.designers.settings.custom_birthday.label"},
+        { "type": "checkbox", "id": "show_verification", "label": "t:sections.designers.settings.show_verification.label", "default": true },
+        { "type": "header", "content": "t:sections.all.padding.section_padding_heading" },
+        { "type": "range", "id": "padding_top", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_top", "default": 40 }, 
+        { "type": "range", "id": "padding_bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "label": "t:sections.all.padding.padding_bottom", "default": 52 }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Designers" }
+  ]
+}
+{% endschema %}

@@ -557,5 +557,15 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+   "designers": {
+    "designer": {
+      "bio": "Bio",
+      "tags": "Tags",
+      "links": "Portfolio links:",
+      "birthday": "Date of birth",
+      "verified": "Verified"
+    },
+    "no-designers": "Choose a designer"
   }
 }

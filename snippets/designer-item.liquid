@@ -1,0 +1,87 @@
+{% comment %}
+  Input args: designer, settings, name, title, bio, photo, tags, links, date_of_birth, verified_designer
+{% endcomment %}
+
+{% comment %} Prioritize metaobject fields, fall back to custom args {% endcomment %}
+{%- assign photo = designer.photo | default: photo -%}
+{%- assign name = designer.name | default: name -%}
+{%- assign title = designer.title | default: title -%}
+{%- assign bio = designer.bio | default: bio -%}
+{%- assign tags = designer.tags.value | default: designer.tags | default: tags -%}
+{%- assign links = designer.links.value | default: designer.links | default: links -%}
+{%- assign birthday = designer.date_of_birth | default: date_of_birth -%}
+{%- assign verified_designer = designer.verified_designer | default: verified_designer -%}
+
+
+<div class="designer-item">
+
+  {% if settings.show_img and photo != blank %}
+  {{ photo | image_url: width: 400 | image_tag: loading: 'lazy', alt: name }}
+{% endif %}
+
+  {% if settings.show_name and name != blank %}
+  <h3 class="designer-name">{{ name }}</h3>
+{% endif %}
+
+  {% if settings.show_title and title != blank %}
+    <p class="designer-title">{{ title }}</p>
+  {% endif %}
+
+  {% if settings.show_bio and bio != blank %}
+    <article class="designer-bio">
+      <h3>{{ 'designers.designer.bio' | t | default: 'Bio' }}</h3>
+        {% if bio contains '<p' %}
+        {{ bio }}
+      {% else %}
+        <div class="bio">{{ bio  | metafield_tag }}</div>
+      {% endif %}
+    </article>
+  {% endif %}
+
+  {% if settings.show_tags and tags.size > 0 %}
+    <article class="designer-tags">
+      <h3>{{ 'designers.designer.tags' | t | default: 'Tags' }}</h3>
+      <ul class="tags">
+        {% for tag in tags %}
+          {% assign tag_clean = tag.name | default: tag | strip %}
+          {% if tag_clean != blank %}
+            <li>{{ tag_clean }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+  {% endif %}
+
+  {% if settings.show_links and links.size > 0 %}
+    <article class="designer-links">
+      <h3>{{ 'designers.designer.links' | t | default: 'Portfolio links:' }}</h3>
+      <ul class="links">
+        {% for link in links %}
+          {% assign link_url = link.url | default: link | strip %}
+          {% assign link_title = link.title | default: link_url %}
+          {% if link_url contains 'http' %}
+            <li><a href="{{ link_url }}" target="_blank" rel="noopener">{{ link_title }}</a></li>
+          {% else %}
+            <li>{{ link_title }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </article>
+  {% endif %}
+
+  {% if settings.show_birthday and birthday != blank %}
+    <article class="designer-birthday">
+      <h3>{{ 'designers.designer.birthday' | t | default: 'Date of birth' }}</h3>
+      <p class="birthday">{{ birthday | date: '%B %d, %Y' }}</p>
+    </article>
+  {% endif %}
+
+  {% if settings.show_verification and verified_designer %}
+    <div class="verification checked">
+      <span class="svg-wrapper">
+        {{ 'circle-check-solid-full.svg' | inline_asset_content }}
+      </span>
+      <p class="green">{{ 'designers.designer.verified' | t | default: 'Verified' }}</p>
+    </div>
+  {% endif %}
+</div>
