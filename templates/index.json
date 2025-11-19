@@ -135,10 +135,46 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "designer_cards_YqMVwd": {
+      "type": "designer-cards",
+      "blocks": {
+        "designers_Ea3JqX": {
+          "type": "designers",
+          "settings": {
+            "show_heading": true,
+            "heading": "Our designers",
+            "collection": "frontpage",
+            "designer_ref": "",
+            "show_img": true,
+            "show_name": true,
+            "custom_name": "",
+            "show_title": true,
+            "custom_title": "",
+            "show_bio": true,
+            "custom_bio": "",
+            "show_tags": true,
+            "custom_tags": "",
+            "show_links": true,
+            "custom_links": "",
+            "show_birthday": true,
+            "custom_birthday": "",
+            "show_verification": true,
+            "padding_top": 40,
+            "padding_bottom": 52
+          }
+        }
+      },
+      "block_order": [
+        "designers_Ea3JqX"
+      ],
+      "name": "Designers",
+      "settings": {}
     }
   },
   "order": [
     "slideshow_4ptgX8",
-    "rich_text_zD4nMf"
+    "rich_text_zD4nMf",
+    "designer_cards_YqMVwd"
   ]
 }
