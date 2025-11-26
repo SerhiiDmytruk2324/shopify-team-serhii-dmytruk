@@ -43,5 +43,14 @@
         "select_color": "Виберіть колір "
     },
     "view": "Переглянути товар"
+  },
+  "products": {
+    "facets": {
+      "sort_by_label": "Сортувати за",
+      "most_popular": "Найпопулярніші",
+      "price_low_to_high": "Ціна: від дешевших",
+      "price_high_to_low": "Ціна: від дорожчих",
+      "title_a_z": "Назва: A–Z"
+    }
   }
 }
