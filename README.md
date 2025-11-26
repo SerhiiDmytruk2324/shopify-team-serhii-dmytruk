@@ -44,6 +44,6 @@
 - Оновлення міні-кошика після додавання
 
 ### Пов'язані ресурси
-- [Нотатка в Asana](https://app.asana.com/1/442123638460530/project/1211341031891512/task/1211341031891540)
-- [Store Preview](https://team-serhii-dmytruk.myshopify.com/?preview_theme_id=155541733595)
+- [Нотатка в Asana](https://app.asana.com/1/442123638460530/project/1211341031891512/task/1211342027592961)
+- [Store Preview](https://team-serhii-dmytruk.myshopify.com/en?preview_theme_id=156976185563)
 - Пароль: Serhii
