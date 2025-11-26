@@ -773,6 +773,9 @@
         "products_to_show": {
           "label": "Product count"
         },
+        "show_price": {
+          "label": "Product price"
+        },
         "columns_desktop": {
           "label": "Columns"
         },

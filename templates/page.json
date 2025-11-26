@@ -15,9 +15,24 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "featured_products_tdT7eU": {
+      "type": "featured-products",
+      "name": "Featured products",
+      "settings": {
+        "heading": "",
+        "collection": "frontpage",
+        "limit": 4,
+        "show_price": true,
+        "show_rating": false,
+        "show_atc": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "featured_products_tdT7eU"
   ]
 }
