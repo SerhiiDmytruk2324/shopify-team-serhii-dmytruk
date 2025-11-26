@@ -3405,6 +3405,71 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "designers": {
+      "name": "Designers",
+      "settings": {
+        "show_heading": {
+          "label": "Show designer heading"
+        },
+        "heading": {
+          "label": "Heading"
+        },
+        "collection": {
+          "label": "Select designers from collection"
+        },
+        "designer_ref": {
+          "label": "Select single designer"
+        },
+        "header": {
+          "content": "Enter designer details manually"
+        },
+        "show_img": {
+          "label": "Show designer photo"
+        },
+        "custom_photo": {
+          "label": "Choose image"
+        },
+        "show_name": {
+          "label": "Show designer name"
+        },
+        "custom_name": {
+          "label": "Enter name"
+        },
+        "show_title": {
+          "label": "Show designer title"
+        },
+        "custom_title": {
+          "label": "Enter title"
+        },
+        "show_bio": {
+          "label": "Show designer bio"
+        },
+        "custom_bio": {
+          "label": "Enter bio"
+        },
+        "show_tags": {
+          "label": "Show tags"
+        },
+        "custom_tags": {
+          "label": "Tags (comma separated list)"
+        },
+        "show_links": {
+          "label": "Show portfolio links"
+        },
+        "custom_links": {
+          "label": "Links (comma separated URLs list)"
+        },
+        "show_birthday": {
+          "label": "Show birthday"
+        },
+        "custom_birthday": {
+          "label": "Enter birthday (YYYY-MM-DD)"
+        },
+        "show_verification": {
+          "label": "Show verification"
+        }
+      }
     }
   }
 }
