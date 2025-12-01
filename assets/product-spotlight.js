@@ -209,7 +209,7 @@
   function createSizeButton(size, variant) {
     const btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'swatch-option-size border-radius';
+    btn.className = 'swatch-option-size p-5 rounded-2xl bg-white border border-stone-300 basis-half-gap transition-all duration-200 cursor-pointer hover:border-black xl:basis-third-gap [&.active]:border-black [&.unavailable]:opacity-50 [&.unavailable]:line-through [&.unavailable]:cursor-not-allowed dark:bg-black dark:[&.active]:bg-white dark:[&.active]:text-black dark:border-1 dark:text-white dark:border-white dark:hover:text-black dark:hover:bg-white transition-colors duration-200';
     btn.textContent = size;
     btn.dataset.size = size;
     btn.setAttribute('aria-label', `Select size ${size}`);
