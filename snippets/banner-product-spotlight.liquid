@@ -3,31 +3,43 @@
   <p>{{- 'products.card.not_found' | t | default: 'Product not found' -}}</p>
   {% break %}
 {% endif %}
+{{ 'tailwind.output.css' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'product-spotlight.js' | asset_url }}" defer></script>
 <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
-{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
-{{ 'product-spotlight.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'dark-mode-toggle.js' | asset_url }}" defer></script>
 
-<section class="spotlight container padding-lr">
-  <div class="spotlight__main mt-60">
-    <div class="gallery">
-      <div class="main-image-container">
+<section class="page-width spotlight bg-white dark:bg-black">
+<div class="flex justify-end p-4"> 
+    <label for="theme-switch" class="relative inline-block w-11 h-6 cursor-pointer">
+      <input 
+      type="checkbox" 
+      id="theme-switch" 
+      class="peer sr-only"
+      aria-label="{{- 'products.product.switch_color_theme' | t | default: 'Switch color theme' -}}">
+      <span class="absolute inset-0 bg-gray-200 rounded-full transition-colors duration-200 ease-in-out peer-checked:bg-blue-600 dark:bg-neutral-700 dark:peer-checked:bg-stone-400 peer-disabled:opacity-50 peer-disabled:pointer-events-none"></span>  
+      <span class="absolute top-1/2 start-0.5 -translate-y-1/2 size-5 bg-white rounded-full shadow-sm !transition-transform duration-200 ease-in-out peer-checked:translate-x-full dark:bg-neutral-400 dark:peer-checked:bg-white"></span>
+    </label>
+  </div>
+  <div class="flex flex-wrap gap-20 mt-6">
+    <div class="flex-1 w-full xl:flex xl:gap-20 xl:flex-row-reverse">
+      <div class="relative">
         <img
           id="main-product-image"
           src="{{ product.featured_image | image_url: width: 500 |  default: product.images.first | image_url: width: 500 }}"
           width="500"
           height="500"
           alt="{{- product.title | escape -}}"
-          class="border-radius">
+          class="rounded-2xl w-full h-auto object-cover aspect-square" />
 
         {%  render 'badge', product: product %}
       </div>
       <div class="swiper thumbs-swiper">
-        <div class="swiper-wrapper" id="thumbs-swiper-wrapper"></div>
+        <div class="swiper-wrapper h-auto! w-full h-auto max-w max-w-screen" id="thumbs-swiper-wrapper"></div>
       </div>
     </div>
-    <div class="product-info options">
-      <h2 class="product-title">{{- product.title | escape -}}</h2>
+    <div class="product-info flex flex-col gap-10 justify-between flex-1">
+      <h2 class="product-title dark:text-white!">{{- product.title | escape -}}</h2>
       <div class="price-container" id="variant-price">
         {% capture price_html %}
         {% render 'product-price-spotlight'
@@ -53,6 +65,7 @@
       {% endif %}
       {% assign initial_variant = product.selected_or_first_available_variant %}
       <div
+        class="dark:text-white"
         id="variant-stock"
         data-available-prefix="{{- 'products.card.available_prefix' | t | default: 'In Stock: ' -}}"
         data-not-available-text="{{- 'products.card.not_available' | t | default: 'Not Available' -}}"></div>
@@ -70,7 +83,7 @@
 
       {% if size_index != nil %}
         <div class="size-options">
-          <div class="swatch-attribute-options" id="size-container"></div>
+          <div class="flex flex-wrap gap-4 mt-5" id="size-container"></div>
         </div>
 
         <script id="product-variants-data" type="application/json">
@@ -98,14 +111,14 @@
       <a
         href="{{ routes.cart_url }}?variant={{ initial_variant.id | default: 0 }}&quantity=1"
         id="add-to-cart-link"
-        class="btn border-radius btn-black add-to-cart text-center"
+        class="py-6 px-10 inline-block bg-black text-white add-to-cart text-center w-full rounded-2xl hover:bg-stone-400 dark:border-1 dark:border-white dark:hover:text-black dark:hover:bg-white transition-colors duration-200"
         role="button">
         {{- 'products.card.add_to_cart' | t | default: 'Add To Cart' -}}
       </a>
 
 
       {% if product.description != blank %}
-        <p class="text-gray">{{- product.description | strip_html | truncate: 200 -}}</p>
+        <p class="text">{{- product.description | strip_html | truncate: 200 -}}</p>
       {% endif %}
     </div>
   </div>

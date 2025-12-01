@@ -141,6 +141,9 @@
       "sku": "SKU",
       "on_sale": "Sale",
       "product_variants": "Product variants",
+      "switch_color_theme": "Switch color theme",
+      "nike": "Nike",
+      "adidas": "Adidas",
       "banner": {
         "not_found": "Product not found",
         "available_prefix": "In Stock: ",
