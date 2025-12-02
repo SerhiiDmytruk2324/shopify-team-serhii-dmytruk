@@ -372,5 +372,27 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script>
+    // (function(){
+    //   const totalStart = performance.now();
+    //   console.log("Inline script started");
+
+    //   const start = performance.now();
+    //   while (performance.now() - start < 100) {
+    //     let x = 0;
+    //     for (let i = 0; i < 1000; i++) {
+    //       x += Math.sqrt(i * Math.random());
+    //     }
+    //   }
+
+    //   const totalEnd = performance.now();
+
+    //   console.log("Inline script finished");
+    //   console.log(`Execution time: ${(totalEnd - totalStart).toFixed(2)} ms`);
+    // })();
+    console.log("Inline script finished");
+    </script>
+    {{ 'test-script-tag.js' | asset_url | script_tag }}
+    <script src="{{ 'test-script-defer.js' | asset_url }}" defer></script>
   </body>
 </html>
