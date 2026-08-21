@@ -72,9 +72,7 @@
         {%- else -%}
             <li
               class="grid__item">
-              {% render 'featured-card-product',
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              %}
+              {% render 'featured-card-product', placeholder_svg_tag: 'placeholder-svg' %}
             </li>
         {%- endif -%}
       </ul>
@@ -161,3 +159,16 @@
   ]
 }
 {% endschema %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {% render 'featured-card-product',
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  %}
+  to: "{% render 'featured-card-product', placeholder_svg_tag: 'placeholder-svg' %}"
+  position: 3131..3207
+{% endcomment %}
