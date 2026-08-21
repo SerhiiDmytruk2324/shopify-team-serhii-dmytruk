@@ -557,5 +557,19 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
-  }
+  },
+  "product-form": {
+      "inquiry": {
+        "title": "Product Inquiry",
+        "select_variant_title" : "Select product variant to check availability",
+        "select_variant": "Select a variant",
+        "success_message": "Thank you for your inquiry! We will get back to you shortly.",
+        "qty": "Quantity",
+        "reason": "Reason for inquiry",
+        "preferred_contact": "Preferred contact method",
+        "contact_email": "Email",
+        "contact_phone": "Phone",
+        "reason_placeholder": "e.g., Availability, Shipping, Product Details"
+      }
+    }
 }

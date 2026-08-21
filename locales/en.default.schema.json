@@ -681,6 +681,18 @@
         }
       }
     },
+    "custom-contact-form": {
+      "name": "Custom Contact Form",
+      "presets": {
+        "name": "Custom Contact form"
+      },
+      "settings": {
+        "title": {
+          "default": "Custom Contact form",
+          "label": "Heading"
+        }
+      }
+    },
     "custom-liquid": {
       "name": "Custom Liquid",
       "settings": {

@@ -1,0 +1,21 @@
+.product-inquiry-section {
+  max-width: var(--page-width); 
+  margin: 0 auto;
+}
+.product-inquiry-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--color-border-input, #ccc);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
