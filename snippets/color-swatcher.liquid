@@ -3,7 +3,7 @@
   assign color_count = 0
 -%}
 
-<div class="colors">
+<div class="colors flex gap-4">
   {%- for variant in product.variants limit: 100 -%}
     {%- assign current_color = variant.options[option_index] -%}
     
@@ -41,18 +41,21 @@
 
       <button
         type="button"
-        class="color-btn{% if color_count == 1 %} active{% endif %}{% unless is_available %} unavailable{% endunless %}"
+        class="color-btn relative border-2 border-transparent [&.active]:outline [&.active]:outline-2 [&.active]:outline-black dark:[&.active]:outline-white focus:outline-2! dark:focus:outline-white! [&.unavailable]:opacity-60 [&.unavailable]:cursor-not-allowed {% if color_count == 1 %} active {% endif %}{% unless is_available %} unavailable{% endunless %}"
         data-color="{{ current_color | escape }}"
         aria-label="{{-'products.card.select_color' | t -}} {{ current_color | escape }}">
 
         <img
           src="{{ color_image | image_url: width: 100 }}"
           alt="{{ current_color | escape }}"
-          width="44"
-          height="44"
-          loading="lazy">
+          width="88"
+          height="88"
+          loading="lazy"
+          class="object-cover cursor-pointer border border-transparent">
         
-        <span class="unavailable-line"></span>
+        <span class="unavailable-line absolute top-1/2 left-0 w-full h-0.5 bg-red-500 -translate-y-1/2 rotate-135 pointer-events-none
+          {% unless is_available %} block {% else %} hidden {% endunless %}
+        "></span>
       </button>
     {%- endif -%}
   {%- endfor -%}

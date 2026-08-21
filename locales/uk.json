@@ -29,6 +29,11 @@
     "empty": "У цій колекції поки немає товарів"
   },
   "products": {
+    "product": {
+        "switch_color_theme": "Перемкнути колірну тему",
+        "nike": "Nike",
+        "adidas": "Adidas"
+    },
     "options": {
       "color": "Колір",
       "size": "Розмір"

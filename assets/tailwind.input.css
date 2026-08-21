@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --spacing-half-gap: calc(50% - 10px);
+    --spacing-third-gap: calc(33.333333% - 10px);
+}

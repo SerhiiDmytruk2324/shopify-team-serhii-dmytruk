@@ -1,8 +1,8 @@
 {% case product.vendor %}
           {% when 'Nike' %}
-            <span class="badge">🔥 Nike</span>
+            <span class="badge absolute top-10 left-10 bg-white py-5 px-10">{{- 'products.product.nike' | t | default: 'Nike' -}}</span>
           {% when 'Adidas' %}
-            <span class="badge">⭐ Adidas</span>
+            <span class="badge absolute top-10 left-10 bg-white py-5 px-10">{{- 'products.product.adidas' | t | default: 'Adidas' -}}</span>
           {% else %}
-            <span class="badge">{{- product.vendor | escape -}}</span>
+            <span class="badge absolute top-10 left-10 bg-white py-5 px-10">{{- product.vendor | escape -}}</span>
         {% endcase %}
